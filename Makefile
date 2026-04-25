@@ -2,7 +2,7 @@ CXX = g++
 CXXFLAGS = -std=c++17 -Wall -Wextra -Iinclude
 TARGET = main
 OBJDIR = build/obj
-SOURCES = src/main.cpp src/student-menu.cpp src/utils/input-utils.cpp \
+SOURCES = src/main.cpp src/main-menu.cpp src/utils/input-utils.cpp \
 	src/utils/grading-utils.cpp src/student.cpp \
 	src/generate-student-list.cpp \
 	src/test/generate-student-list-test.cpp \
