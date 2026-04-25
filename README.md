@@ -119,6 +119,40 @@ Iš šių bandymų matyti, kad `struct` versija šiek tiek greičiau atliko abu 
 
 Didėjant įvesčiai, skirtumas tarp abiejų variantų išliko pastebimas, tačiau didžiausią laiką vis tiek sudarė duomenų nuskaitymas ir rūšiavimas.
 
+## Papildomas testas: kompiliatoriaus optimizavimo lygiai
+
+Papildomai buvo atliktas testas, kuriame lyginami tie patys scenarijai, tačiau keičiant kompiliatoriaus optimizavimo lygį (`-O1`, `-O2`, `-O3`).
+
+### `struct` su skirtingais optimizavimo lygiais
+
+#### `-O1`
+
+![Testų rezultatai su struct -O1](assets/student-struct-o1.png)
+
+#### `-O2`
+
+![Testų rezultatai su struct -O2](assets/student-struct-o2.png)
+
+#### `-O3`
+
+![Testų rezultatai su struct -O3](assets/student-struct-o3.png)
+
+### `class` su skirtingais optimizavimo lygiais
+
+#### `-O1`
+
+![Testų rezultatai su class -O1](assets/student-class-o1.png)
+
+#### `-O2`
+
+![Testų rezultatai su class -O2](assets/student-class-o2.png)
+
+#### `-O3`
+
+![Testų rezultatai su class -O3](assets/student-class-o3.png)
+
+Trumpa įžvalga: didinant optimizavimo lygį, bendras vykdymo laikas mažėja abiem realizacijoms, o didžiausias pagerėjimas dažniausiai matomas pereinant nuo `-O1` prie `-O2`.
+
 ## Struktūra
 
 - `include/` - antraštiniai failai

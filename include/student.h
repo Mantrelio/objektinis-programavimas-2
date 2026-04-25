@@ -28,6 +28,7 @@ public:
     Student(string name, string surname) : name_(name), surname_(surname), examGrade_(0) {}
     Student(string name, string surname, vector<int> homeworkGrades, int examGrade) : name_(name), surname_(surname), examGrade_(examGrade), homeworkGrades_(homeworkGrades) {}
     Student(std::istream& is);
+    ~Student() = default;
 
     inline const string& name() const { return name_; }
     inline const string& surname() const { return surname_; }
