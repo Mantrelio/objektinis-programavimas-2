@@ -1,7 +1,6 @@
 #include "output-results.h"
 
 #include "input-utils.h"
-#include "student-grading.h"
 
 #include <deque>
 #include <fstream>
@@ -33,11 +32,11 @@ void outputResults(const T& students, std::ostream& out) {
     out << string(70, '-') << endl;
 
     for (const Student& student : students) {
-        const double finalAvg = calculateFinalGradeAverage(student.homeworkGrades, student.examGrade);
-        const double finalMed = calculateFinalGradeMedian(student.homeworkGrades, student.examGrade);
+        const double finalAvg = student.finalGradeAverage();
+        const double finalMed = student.finalGradeMedian();
 
-        out << left << setw(20) << student.name
-            << left << setw(20) << student.surname
+        out << left << setw(20) << student.name()
+            << left << setw(20) << student.surname()
             << right << fixed << setprecision(2) << setw(15) << finalAvg
             << right << fixed << setprecision(2) << setw(15) << finalMed << endl;
     }
