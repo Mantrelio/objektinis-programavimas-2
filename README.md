@@ -151,6 +151,21 @@ Papildomai buvo atliktas testas, kuriame lyginami tie patys scenarijai, tačiau 
 
 ![Testų rezultatai su class -O3](assets/student-class-o3.png)
 
+### Lentelė: vykdomojo failo dydis ir laikai
+
+Žemiau suvesti tie patys rezultatai, kurie matomi aukščiau esančiose ekrano nuotraukose (vidurkiai per 5 iteracijas, laikas sekundėmis), kartu su vykdomojo `main` dydžiu kilobaitais. **KB** čia reiškia 1024 baitus (`wc -c main` ÷ 1024, vienas skaitmuo po kablelio). `main` dydžiai išmatuoti po `make clean` ir `make CXXFLAGS="-std=c++17 -Wall -Wextra -Iinclude -<lygis>"` su `g++` 13.3.0; esant identiškam `Student` išdėstymui, `struct` ir `class` raktiniai žodžiai davė tą patį dydį kiekvienam `-O` lygiui.
+
+Stulpeliai **100k** / **1M** atitinka failus `students100000` ir `students1000000`. **Nusk.** — failo nuskaitymas, **Rūš.** — rūšiavimas, **Skir.** — skirstymas į du konteinerius, **Viso** — bendras laikas.
+
+| Realizacija | Lygis | `main` (KB) | 100k Nusk. (s) | 100k Rūš. (s) | 100k Skir. (s) | 100k Viso (s) | 1M Nusk. (s) | 1M Rūš. (s) | 1M Skir. (s) | 1M Viso (s) |
+| --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| `struct` | `-O1` | 253.9 | 0.275143 | 0.068159 | 0.027613 | 0.370915 | 2.901511 | 1.079925 | 0.323663 | 4.305099 |
+| `struct` | `-O2` | 250.4 | 0.270200 | 0.070304 | 0.027662 | 0.368166 | 2.880152 | 1.102628 | 0.323349 | 4.306130 |
+| `struct` | `-O3` | 287.8 | 0.274755 | 0.070834 | 0.026898 | 0.372487 | 2.921015 | 1.094838 | 0.315696 | 4.331548 |
+| `class` | `-O1` | 253.9 | 0.302899 | 0.072424 | 0.028197 | 0.403521 | 3.321176 | 1.232801 | 0.341547 | 4.895525 |
+| `class` | `-O2` | 250.4 | 0.321139 | 0.087387 | 0.033403 | 0.441929 | 3.285367 | 1.200851 | 0.326587 | 4.812805 |
+| `class` | `-O3` | 287.8 | 0.295449 | 0.067782 | 0.027077 | 0.390308 | 3.154298 | 1.103217 | 0.317457 | 4.574972 |
+
 Trumpa įžvalga: didinant optimizavimo lygį, bendras vykdymo laikas mažėja abiem realizacijoms, o didžiausias pagerėjimas dažniausiai matomas pereinant nuo `-O1` prie `-O2`.
 
 ## Struktūra
