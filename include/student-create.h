@@ -2,7 +2,7 @@
 
 #include <cstddef>
 
-#include "student-vector.h"
+#include "student.h"
 
 string randomName();
 string randomSurname();
