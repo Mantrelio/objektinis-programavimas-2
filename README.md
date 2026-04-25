@@ -99,77 +99,25 @@ Programa pateikia laikus šioms dalims:
 - skirstymas į `nuskriausti` ir `protingi`
 - bendras laikas
 
-## Testų rezultatų demonstracija
+## Testų rezultatai: `struct` ir `class`
 
-Žemiau pateikti užfiksuoti rezultatų grafikai kiekvienam konteineriui:
+Žemiau pateikti testai, kuriuose buvo lyginama, kaip programa veikia naudojant `struct` ir `class` studentų aprašymui.
 
-### Pirma strategija
+### `struct`
 
-#### `vector<Student>`
+![Testų rezultatai su struct](assets/student-struct.png)
 
-![vector<Student> rezultatai](assets/student-vector.png)
+### `class`
 
-#### `list<Student>`
+![Testų rezultatai su class](assets/student-class.png)
 
-![list<Student> rezultatai](assets/student-list.png)
-
-#### `deque<Student>`
-
-![deque<Student> rezultatai](assets/student-deque.png)
-
-### Antra strategija
-
-#### `vector<Student>`
-
-![vector<Student> rezultatai 2](assets/student-vector-2.png)
-
-#### `list<Student>`
-
-![list<Student> rezultatai 2](assets/student-list-2.png)
-
-#### `deque<Student>`
-
-![deque<Student> rezultatai 2](assets/student-deque-2.png)
-
-### Trečia strategija
-
-#### `vector<Student>`
-
-![vector<Student> rezultatai 3](assets/student-vector-3.png)
-
-#### `list<Student>`
-
-![list<Student> rezultatai 3](assets/student-list-3.png)
-
-#### `deque<Student>`
-
-![deque<Student> rezultatai 3](assets/student-deque-3.png)
-
-Pastaba: rezultatai priklauso nuo aparatinės įrangos, kompiliatoriaus versijos, disko spartos ir tuo metu veikiančių foninių procesų.
+Pastaba: rezultatai priklauso nuo aparatinės įrangos, kompiliatoriaus versijos, disko spartos ir tuo metu veikiančių foninių procesų. Šiuose testuose naudoti failai `students100000` ir `students1000000`, o kiekvienas matavimas buvo vidurkinamas per 5 iteracijas.
 
 ## Išvados
 
-Iš rezultatų matyti, kad strategijų skirtumai yra nuoseklūs visiems trims konteineriams: pirma strategija yra greičiausia, antra strategija dažniausiai užima vidurinę vietą, o trečia strategija yra lėčiausia.
+Iš šių bandymų matyti, kad `struct` versija šiek tiek greičiau atliko abu testuotus scenarijus nei `class` versija. Skirtumas buvo matomas tiek failo nuskaitymo, tiek rūšiavimo, tiek bendro laiko rezultatuose.
 
-Svarbiausia ne pats konteineris, o pasirinkta skaidymo strategija. Konteinerio tipas daro įtaką bendram laikui, bet strategijų tarpusavio skirtumas išlieka aiškiausias.
-
-### Pirma strategija
-
-- Pirmoji strategija pasirodė geriausiai: ji vieną kartą pereina per visus studentus ir sukuria du naujus konteinerius.
-- Ji buvo greičiausia iš visų trijų, nes išvengia papildomo viso konteinerio skaidymo ir turi paprastesnį vykdymo kelią.
-
-### Antra strategija
-
-- Antroji strategija paprastai atsiduria per vidurį: ji tvarko elementus vietoje, bet vis tiek turi daugiau papildomų operacijų nei pirmoji strategija.
-- Dėl to jos skirstymo laikas dažniausiai buvo tarp pirmos ir trečios strategijų.
-
-### Trečia strategija
-
-- Trečioji strategija buvo lėčiausia, nes ji pirmiausia atlieka papildomą viso konteinerio skaidymą, o po to dar kopijuoja rezultatus į naujus konteinerius.
-- Dėl didesnio judinimo ir kopijavimo jos vykdymo laikas buvo didžiausias.
-
-- Didėjant įvesčiai, visų strategijų trukmė sparčiai auga, o didžiausiuose failuose reikšmingą dalį vis tiek sudaro nuskaitymas iš disko.
-- Patikimiausias palyginimas gaunamas tada, kai testai kartojami toje pačioje aplinkoje ir vertinamas ne tik bendras laikas, bet ir atskiros jo dalys.
+Didėjant įvesčiai, skirtumas tarp abiejų variantų išliko pastebimas, tačiau didžiausią laiką vis tiek sudarė duomenų nuskaitymas ir rūšiavimas.
 
 ## Struktūra
 
