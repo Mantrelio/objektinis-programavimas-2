@@ -4,8 +4,8 @@
 #include "input-utils.h"
 #include "output-results.h"
 #include "sort-students.h"
-#include "student-vector.h"
-#include "student-grading.h"
+#include "student.h"
+#include "grading-utils.h"
 
 #include <utility>
 
