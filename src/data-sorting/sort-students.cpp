@@ -1,7 +1,6 @@
 #include "sort-students.h"
 
 #include "input-utils.h"
-#include "student-grading.h"
 
 #include <algorithm>
 #include <iostream>
@@ -22,23 +21,17 @@ void sortStudents(T& students, int sortChoice, bool ascending) {
     auto lessByChoice = [sortChoice](const Student& a, const Student& b) {
         switch (sortChoice) {
             case 1:
-                if (a.name == b.name) return a.surname < b.surname;
-                return a.name < b.name;
+                if (a.name() == b.name()) return a.surname() < b.surname();
+                return a.name() < b.name();
             case 2:
-                if (a.surname == b.surname) return a.name < b.name;
-                return a.surname < b.surname;
-            case 3: {
-                const double fa = calculateFinalGradeAverage(a.homeworkGrades, a.examGrade);
-                const double fb = calculateFinalGradeAverage(b.homeworkGrades, b.examGrade);
-                return fa < fb;
-            }
-            case 4: {
-                const double fa = calculateFinalGradeMedian(a.homeworkGrades, a.examGrade);
-                const double fb = calculateFinalGradeMedian(b.homeworkGrades, b.examGrade);
-                return fa < fb;
-            }
+                if (a.surname() == b.surname()) return a.name() < b.name();
+                return a.surname() < b.surname();
+            case 3:
+                return a.finalGradeAverage() < b.finalGradeAverage();
+            case 4:
+                return a.finalGradeMedian() < b.finalGradeMedian();
             default:
-                return a.name < b.name;
+                return a.name() < b.name();
         }
     };
 

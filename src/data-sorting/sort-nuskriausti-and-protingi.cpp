@@ -13,7 +13,7 @@ std::pair<T, T> sortNuskriaustiAndProtingiFirstStrategy(const T& students) {
 	T protingi;
 
 	for (const Student& student : students) {
-		if (calculateFinalGradeAverage(student.homeworkGrades, student.examGrade) >= 5) {
+		if (student.finalGradeAverage() >= 5) {
 			protingi.push_back(student);
 		} else {
 			nuskriausti.push_back(student);
@@ -32,14 +32,14 @@ T sortNuskriaustiAndProtingiSecondStrategy(T& students) {
 	T nuskriausti;
 
 	for (const Student& student : students) {
-		if (calculateFinalGradeAverage(student.homeworkGrades, student.examGrade) < 5) {
+		if (student.finalGradeAverage() < 5) {
 			nuskriausti.push_back(student);
 		}
 	}
 
 	students.erase(
 		std::remove_if(students.begin(), students.end(), [](const Student& student) {
-			return calculateFinalGradeAverage(student.homeworkGrades, student.examGrade) < 5;
+			return student.finalGradeAverage() < 5;
 		}),
 		students.end()
 	);
@@ -54,7 +54,7 @@ template std::deque<Student> sortNuskriaustiAndProtingiSecondStrategy(std::deque
 template <typename T>
 std::pair<T, T> sortNuskriaustiAndProtingiThirdStrategy(T& students) {
 	auto splitPoint = std::stable_partition(students.begin(), students.end(), [](const Student& student) {
-		return calculateFinalGradeAverage(student.homeworkGrades, student.examGrade) >= 5;
+		return student.finalGradeAverage() >= 5;
 	});
 
 	T protingi;
