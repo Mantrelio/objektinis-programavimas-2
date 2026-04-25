@@ -2,6 +2,9 @@
 
 #include "student.h"
 
+string randomName();
+string randomSurname();
+
 Student createStudentManual();
 Student createStudentRandomGrades();
 Student createStudentFullyRandom();
