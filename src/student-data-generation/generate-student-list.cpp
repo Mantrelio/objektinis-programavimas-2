@@ -1,8 +1,8 @@
 #include "generate-student-list.h"
 #include "input-utils.h"
-#include "student-vector.h"
+#include "student.h"
 #include "create-student.h"
-#include "student-grading.h"
+#include "grading-utils.h"
 
 #include <cctype>
 #include <fstream>
@@ -31,12 +31,12 @@ void printHeader(std::ostream& output) {
 }
 
 void printStudentListRow(std::ostream& output, const Student& s) {
-    output << left << setw(25) << s.name
-        << left << setw(25) << s.surname;
-    for (int g : s.homeworkGrades) {
+    output << left << setw(25) << s.name()
+        << left << setw(25) << s.surname();
+    for (int g : s.homeworkGrades()) {
         output << right << setw(10) << g;
     }
-    output << right << setw(10) << s.examGrade << endl;
+    output << right << setw(10) << s.examGrade() << endl;
 }
 
 void generateStudentListFile(int studentCount, const std::string& filename) {
@@ -49,16 +49,16 @@ void generateStudentListFile(int studentCount, const std::string& filename) {
 
         printHeader(outputFile);
 
-        Student student;
-
         for (int i = 0; i < studentCount; i++) {
             Student student = createStudentFullyRandom();
-            student.homeworkGrades.clear();
-            student.homeworkGrades.reserve(15);
+            vector<int> homeworkGrades;
+            homeworkGrades.reserve(15);
             
             for (int j = 0; j < 15; j++) {
-                student.homeworkGrades.push_back(randomGrade());
+                homeworkGrades.push_back(randomGrade());
             }
+
+            student.setHomeworkGrades(homeworkGrades);
 
             printStudentListRow(outputFile, student);
         }
