@@ -73,3 +73,16 @@ std::istream& Student::readStudent(std::istream& is) {
 
     return is;
 }
+
+std::istream& operator>>(std::istream& is, Student& student) {
+    return student.readStudent(is);
+}
+
+std::ostream& operator<<(std::ostream& os, const Student& student) {
+    os << left << setw(20) << student.name()
+       << left << setw(20) << student.surname()
+       << right << std::fixed << std::setprecision(2) << setw(15) << student.finalGradeAverage()
+       << right << std::fixed << std::setprecision(2) << setw(15) << student.finalGradeMedian();
+
+    return os;
+}
