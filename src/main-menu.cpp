@@ -6,6 +6,7 @@
 #include "generate-student-list.h"
 #include "generate-student-list-test.h"
 #include "output-nuskriausti-and-protingi-test.h"
+#include "student-rule-of-five-operators-test.h"
 #include "sort-nuskriausti-and-protingi.h"
 #include "sort-students.h"
 
@@ -32,7 +33,8 @@ void showMainMenu() {
     cout << "6 - Skirstyti i nuskriaustus ir protingus" << endl;
     cout << "7 - Testuoti failo kurima" << endl;
     cout << "8 - Testuoti studentu skirstyma i nuskriaustus ir protingus" << endl;
-    cout << "9 - Baigti ir peržiūrėti rezultatus" << endl;
+    cout << "9 - Testuoti Student Rule of Five ir operatorius" << endl;
+    cout << "10 - Baigti ir peržiūrėti rezultatus" << endl;
 }
 
 template <typename T>
@@ -79,6 +81,9 @@ void handleMenuChoice(int choice, T& students) {
             outputNuskriaustiAndProtingiTestForAllStudentsTxtFiles();
             break;
         case 9:
+            handleStudentRuleOfFiveAndOperatorsTest();
+            break;
+        case 10:
             runSortStudentsChoicePrompt(students);
             chooseOutputAndPrint(students);
             break;
@@ -95,9 +100,9 @@ void startMainMenu() {
 
     int choice = 0;
 
-    while (choice != 9) {
+    while (choice != 10) {
         showMainMenu();
-        choice = readIntInRange("Pasirinkimas: ", 1, 9);
+        choice = readIntInRange("Pasirinkimas: ", 1, 10);
         handleMenuChoice(choice, students);
     }
 }
