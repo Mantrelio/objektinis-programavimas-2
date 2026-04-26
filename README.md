@@ -143,6 +143,7 @@ Padengiami testai:
 - `operator>>` su korektiška įvestimi
 - `operator>>` su nekorektiška įvestimi (`failbit`)
 - `operator<<` formatavimas (lyginama pilna suformatuota eilutė)
+- abstrakti `Human` klasė (tikrinama, kad `Human` yra abstrakti ir jos objekto sukurti negalima)
 
 ## Testų rezultatai: `struct` ir `class`
 
