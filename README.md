@@ -101,6 +101,16 @@ Programa pateikia laikus šioms dalims:
 
 ## `Student` klasė: Rule of Five ir operatoriai
 
+`Student` klasė paveldi abstrakčią bazinę klasę `Human` (failas `include/human.h`).
+
+`Human` klasė apibrėžia:
+
+- bendrus laukus `name_` ir `surname_`
+- bendrus metodus `name()`, `surname()`, `setName(...)`, `setSurname(...)`
+- virtualų destruktorių `virtual ~Human() = 0`, kuris leidžia saugiai naudoti polimorfizmą
+
+Taip `Student` klasėje nelieka dubliuojamų vardo ir pavardės laukų, o paveldėti metodai naudojami tiesiogiai visame projekte.
+
 `Student` klasėje (failas `include/student.h`) yra realizuoti šie Rule of Five metodai:
 
 - kopijavimo konstruktorius `Student(const Student& other)`
