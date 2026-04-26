@@ -111,6 +111,12 @@ Programa pateikia laikus šioms dalims:
 
 Taip `Student` klasėje nelieka dubliuojamų vardo ir pavardės laukų, o paveldėti metodai naudojami tiesiogiai visame projekte.
 
+### `Human` abstraktumo iliustracija
+
+Žemiau pateikta iliustracija parodo, kad `Human` klasės objekto sukurti negalima, nes klasė yra abstrakti.
+
+![Human abstraktumo klaida](assets/human-abstract-failure.png)
+
 `Student` klasėje (failas `include/student.h`) yra realizuoti šie Rule of Five metodai:
 
 - kopijavimo konstruktorius `Student(const Student& other)`
