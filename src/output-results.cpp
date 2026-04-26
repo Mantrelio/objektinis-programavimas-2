@@ -9,12 +9,10 @@
 #include <stdexcept>
 
 using std::endl;
-using std::fixed;
 using std::left;
 using std::ofstream;
 using std::right;
 using std::runtime_error;
-using std::setprecision;
 using std::setw;
 
 template <typename T>
@@ -32,13 +30,7 @@ void outputResults(const T& students, std::ostream& out) {
     out << string(70, '-') << endl;
 
     for (const Student& student : students) {
-        const double finalAvg = student.finalGradeAverage();
-        const double finalMed = student.finalGradeMedian();
-
-        out << left << setw(20) << student.name()
-            << left << setw(20) << student.surname()
-            << right << fixed << setprecision(2) << setw(15) << finalAvg
-            << right << fixed << setprecision(2) << setw(15) << finalMed << endl;
+        out << student << endl;
     }
     out << string(70, '=') << endl;
 }

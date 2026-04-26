@@ -109,7 +109,8 @@ T createStudentsFromFile(const string& filename) {
         }
 
         istringstream iss(line);
-        Student student(iss);
+        Student student;
+        iss >> student;
 
         if (iss.fail()) {
             cout << "Praleistos eilutės " << lineNumber
