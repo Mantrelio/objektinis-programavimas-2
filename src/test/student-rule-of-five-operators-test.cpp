@@ -1,5 +1,6 @@
 #include "student-rule-of-five-operators-test.h"
 
+#include "human.h"
 #include "student.h"
 
 #include <cstddef>
@@ -7,6 +8,7 @@
 #include <iostream>
 #include <new>
 #include <sstream>
+#include <type_traits>
 #include <utility>
 #include <vector>
 
@@ -111,6 +113,11 @@ bool testOutputOperator() {
     return output.str() == expected.str();
 }
 
+bool testHumanIsAbstractAndNotInstantiable() {
+    return std::is_abstract<Human>::value &&
+           !std::is_default_constructible<Human>::value;
+}
+
 void handleStudentRuleOfFiveAndOperatorsTest() {
     int passed = 0;
     int failed = 0;
@@ -127,6 +134,7 @@ void handleStudentRuleOfFiveAndOperatorsTest() {
         {"operator>> valid input", testInputOperatorValid},
         {"operator>> invalid input", testInputOperatorInvalid},
         {"operator<< output formatting", testOutputOperator},
+        {"Human negali buti sukurtas (abstrakti klase)", testHumanIsAbstractAndNotInstantiable},
     };
 
     std::cout << "\n=== Student Rule of Five ir operatoriu testai ===" << std::endl;
