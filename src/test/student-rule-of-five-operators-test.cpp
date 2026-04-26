@@ -2,11 +2,11 @@
 
 #include "student.h"
 
+#include <cstddef>
 #include <iomanip>
 #include <iostream>
 #include <new>
 #include <sstream>
-#include <type_traits>
 #include <utility>
 #include <vector>
 
@@ -61,13 +61,13 @@ bool testMoveAssignment() {
 }
 
 bool testDestructor() {
-    using StudentStorage = typename std::aligned_storage<sizeof(Student), alignof(Student)>::type;
+    alignas(Student) std::byte storage[sizeof(Student)];
+    void* const mem = static_cast<void*>(storage);
 
-    StudentStorage storage;
-    Student* student = new (&storage) Student("Lina", "Linute", {9, 8, 10}, 10);
+    Student* student = ::new (mem) Student("Lina", "Linute", std::vector<int>{9, 8, 10}, 10);
     student->~Student();
 
-    Student* rebuilt = new (&storage) Student();
+    Student* rebuilt = ::new (mem) Student();
     const bool ok = rebuilt->name().empty() &&
                     rebuilt->surname().empty() &&
                     rebuilt->examGrade() == 0 &&
