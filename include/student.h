@@ -7,6 +7,8 @@
 #include <utility>
 #include <vector>
 
+#include "human.h"
+
 using std::string;
 using std::vector;
 using std::cout;
@@ -16,28 +18,24 @@ using std::setw;
 using std::left;
 using std::right;
 
-class Student {
+class Student : public Human {
 private:
-    string name_;
-    string surname_;
     int examGrade_;
     vector<int> homeworkGrades_;
 
 public:
-    Student() : examGrade_(0) {}
+    Student() : Human(), examGrade_(0) {}
 
-    Student(string name, string surname) : name_(name), surname_(surname), examGrade_(0) {}
-    Student(string name, string surname, vector<int> homeworkGrades, int examGrade) : name_(name), surname_(surname), examGrade_(examGrade), homeworkGrades_(homeworkGrades) {}
+    Student(string name, string surname) : Human(name, surname), examGrade_(0) {}
+    Student(string name, string surname, vector<int> homeworkGrades, int examGrade) : Human(name, surname), examGrade_(examGrade), homeworkGrades_(homeworkGrades) {}
     Student(std::istream& is);
     Student(const Student& other)
-        : name_(other.name_),
-          surname_(other.surname_),
+        : Human(other),
           examGrade_(other.examGrade_),
           homeworkGrades_(other.homeworkGrades_) {}
 
     Student(Student&& other) noexcept
-        : name_(std::move(other.name_)),
-          surname_(std::move(other.surname_)),
+        : Human(std::move(other)),
           examGrade_(other.examGrade_),
           homeworkGrades_(std::move(other.homeworkGrades_)) {
         other.examGrade_ = 0;
@@ -47,8 +45,7 @@ public:
             return *this;
         }
 
-        name_ = other.name_;
-        surname_ = other.surname_;
+        Human::operator=(other);
         examGrade_ = other.examGrade_;
         homeworkGrades_ = other.homeworkGrades_;
 
@@ -59,8 +56,7 @@ public:
             return *this;
         }
 
-        name_ = std::move(other.name_);
-        surname_ = std::move(other.surname_);
+        Human::operator=(std::move(other));
         examGrade_ = other.examGrade_;
         homeworkGrades_ = std::move(other.homeworkGrades_);
         other.examGrade_ = 0;
@@ -74,15 +70,15 @@ public:
         examGrade_ = 0;
     }
 
-    inline const string& name() const { return name_; }
-    inline const string& surname() const { return surname_; }
+    using Human::name;
+    using Human::surname;
     inline int examGrade() const { return examGrade_; }
     inline const vector<int>& homeworkGrades() const { return homeworkGrades_; }
     double finalGradeAverage() const;
     double finalGradeMedian() const;
 
-    inline void setName(string name) { name_ = name; }
-    inline void setSurname(string surname) { surname_ = surname; }
+    using Human::setName;
+    using Human::setSurname;
     inline void setExamGrade(int examGrade) { examGrade_ = examGrade; }
     inline void setHomeworkGrades(vector<int> homeworkGrades) { homeworkGrades_ = homeworkGrades; }
 
