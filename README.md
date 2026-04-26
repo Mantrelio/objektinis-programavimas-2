@@ -99,6 +99,41 @@ Programa pateikia laikus šioms dalims:
 - skirstymas į `nuskriausti` ir `protingi`
 - bendras laikas
 
+## `Student` klasė: Rule of Five ir operatoriai
+
+`Student` klasėje (failas `include/student.h`) yra realizuoti šie Rule of Five metodai:
+
+- kopijavimo konstruktorius `Student(const Student& other)`
+- perkėlimo konstruktorius `Student(Student&& other) noexcept`
+- kopijavimo priskyrimo operatorius `Student& operator=(const Student& other)`
+- perkėlimo priskyrimo operatorius `Student& operator=(Student&& other) noexcept`
+- destruktorius `~Student()`
+
+Papildomai realizuoti įvedimo/išvedimo operatoriai:
+
+- `operator>>(std::istream&, Student&)`:
+  - nuskaito vieną eilutę formatu `Vardas Pavardė ND... Egzaminas`
+  - paskutinis skaičius laikomas egzamino pažymiu
+  - tikrina pažymių intervalą `[1..10]`
+  - neteisingos įvesties atveju nustato `failbit`
+- `operator<<(std::ostream&, const Student&)`:
+  - išveda vardą, pavardę, galutinį balą pagal vidurkį ir medianą
+  - taiko lygiuotę, stulpelių plotį ir 2 skaitmenų tikslumą po kablelio
+
+### Šių dalių testų padengimas
+
+Interaktyviame meniu pasirinkus `9 - Testuoti Student Rule of Five ir operatorius` paleidžiamas testų rinkinys iš `src/test/student-rule-of-five-operators-test.cpp`.
+
+Padengiami testai:
+
+- kopijavimo konstruktorius (ar nukopijuoti visi laukai)
+- perkėlimo konstruktorius (ar perkelti visi laukai)
+- kopijavimo priskyrimo operatorius
+- perkėlimo priskyrimo operatorius
+- `operator>>` su korektiška įvestimi
+- `operator>>` su nekorektiška įvestimi (`failbit`)
+- `operator<<` formatavimas (lyginama pilna suformatuota eilutė)
+
 ## Testų rezultatai: `struct` ir `class`
 
 Žemiau pateikti testai, kuriuose buvo lyginama, kaip programa veikia naudojant `struct` ir `class` studentų aprašymui.
