@@ -4,6 +4,7 @@
 #include <iomanip>
 #include <iostream>
 #include <string>
+#include <utility>
 #include <vector>
 
 using std::string;
@@ -28,7 +29,50 @@ public:
     Student(string name, string surname) : name_(name), surname_(surname), examGrade_(0) {}
     Student(string name, string surname, vector<int> homeworkGrades, int examGrade) : name_(name), surname_(surname), examGrade_(examGrade), homeworkGrades_(homeworkGrades) {}
     Student(std::istream& is);
-    ~Student() = default;
+    Student(const Student& other)
+        : name_(other.name_),
+          surname_(other.surname_),
+          examGrade_(other.examGrade_),
+          homeworkGrades_(other.homeworkGrades_) {}
+
+    Student(Student&& other) noexcept
+        : name_(std::move(other.name_)),
+          surname_(std::move(other.surname_)),
+          examGrade_(other.examGrade_),
+          homeworkGrades_(std::move(other.homeworkGrades_)) {
+        other.examGrade_ = 0;
+    }
+    Student& operator=(const Student& other) {
+        if (this == &other) {
+            return *this;
+        }
+
+        name_ = other.name_;
+        surname_ = other.surname_;
+        examGrade_ = other.examGrade_;
+        homeworkGrades_ = other.homeworkGrades_;
+
+        return *this;
+    }
+    Student& operator=(Student&& other) noexcept {
+        if (this == &other) {
+            return *this;
+        }
+
+        name_ = std::move(other.name_);
+        surname_ = std::move(other.surname_);
+        examGrade_ = other.examGrade_;
+        homeworkGrades_ = std::move(other.homeworkGrades_);
+        other.examGrade_ = 0;
+
+        return *this;
+    }
+    ~Student() {
+        name_.clear();
+        surname_.clear();
+        homeworkGrades_.clear();
+        examGrade_ = 0;
+    }
 
     inline const string& name() const { return name_; }
     inline const string& surname() const { return surname_; }
@@ -43,4 +87,6 @@ public:
     inline void setHomeworkGrades(vector<int> homeworkGrades) { homeworkGrades_ = homeworkGrades; }
 
     std::istream& readStudent(std::istream& is);
+    friend std::istream& operator>>(std::istream& is, Student& student);
+    friend std::ostream& operator<<(std::ostream& os, const Student& student);
 };
