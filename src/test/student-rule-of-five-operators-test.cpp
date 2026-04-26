@@ -4,7 +4,9 @@
 
 #include <iomanip>
 #include <iostream>
+#include <new>
 #include <sstream>
+#include <type_traits>
 #include <utility>
 #include <vector>
 
@@ -58,6 +60,23 @@ bool testMoveAssignment() {
            target.homeworkGrades() == std::vector<int>({7, 8});
 }
 
+bool testDestructor() {
+    using StudentStorage = typename std::aligned_storage<sizeof(Student), alignof(Student)>::type;
+
+    StudentStorage storage;
+    Student* student = new (&storage) Student("Lina", "Linute", {9, 8, 10}, 10);
+    student->~Student();
+
+    Student* rebuilt = new (&storage) Student();
+    const bool ok = rebuilt->name().empty() &&
+                    rebuilt->surname().empty() &&
+                    rebuilt->examGrade() == 0 &&
+                    rebuilt->homeworkGrades().empty();
+    rebuilt->~Student();
+
+    return ok;
+}
+
 bool testInputOperatorValid() {
     std::istringstream input("Matas Matutis 10 9 8 7\n");
     Student student;
@@ -104,6 +123,7 @@ void handleStudentRuleOfFiveAndOperatorsTest() {
         {"Move constructor", testMoveConstructor},
         {"Copy assignment", testCopyAssignment},
         {"Move assignment", testMoveAssignment},
+        {"Destructor", testDestructor},
         {"operator>> valid input", testInputOperatorValid},
         {"operator>> invalid input", testInputOperatorInvalid},
         {"operator<< output formatting", testOutputOperator},
