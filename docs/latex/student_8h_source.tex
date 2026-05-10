@@ -1,0 +1,94 @@
+\doxysection{student.\+h}
+\hypertarget{student_8h_source}{}\label{student_8h_source}\index{include/student.h@{include/student.h}}
+\mbox{\hyperlink{student_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <cstddef>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <iomanip>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <utility>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{human_8h}{human.h}}"{}}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{keyword}{using\ }std::string;}
+\DoxyCodeLine{00013\ \textcolor{keyword}{using\ }std::vector;}
+\DoxyCodeLine{00014\ \textcolor{keyword}{using\ }std::cout;}
+\DoxyCodeLine{00015\ \textcolor{keyword}{using\ }std::cin;}
+\DoxyCodeLine{00016\ \textcolor{keyword}{using\ }std::endl;}
+\DoxyCodeLine{00017\ \textcolor{keyword}{using\ }std::setw;}
+\DoxyCodeLine{00018\ \textcolor{keyword}{using\ }std::left;}
+\DoxyCodeLine{00019\ \textcolor{keyword}{using\ }std::right;}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classStudent}{Student}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classHuman}{Human}}\ \{}
+\DoxyCodeLine{00022\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{int}\ examGrade\_;}
+\DoxyCodeLine{00024\ \ \ \ \ vector<int>\ homeworkGrades\_;}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00027\ \ \ \ \ \mbox{\hyperlink{classStudent_af9168cedbfa5565cf0b20c1a9d3f5c9d}{Student}}()\ :\ \mbox{\hyperlink{classHuman}{Human}}(),\ examGrade\_(0)\ \{\}}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \ \ \ \ \mbox{\hyperlink{classStudent_a8d86334cc4706373de2c4bcaf183db88}{Student}}(\textcolor{keywordtype}{string}\ \mbox{\hyperlink{classStudent_ac6e5b4c8d51750cd77dcc4239b797f13}{name}},\ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{classStudent_a40849ea6918f6d5775bc5fb03486a5e6}{surname}})\ :\ \mbox{\hyperlink{classHuman}{Human}}(\mbox{\hyperlink{classStudent_ac6e5b4c8d51750cd77dcc4239b797f13}{name}},\ \mbox{\hyperlink{classStudent_a40849ea6918f6d5775bc5fb03486a5e6}{surname}}),\ examGrade\_(0)\ \{\}}
+\DoxyCodeLine{00030\ \ \ \ \ \mbox{\hyperlink{classStudent_afc6e6f6b0f00e5cf663ee379284bcd1c}{Student}}(\textcolor{keywordtype}{string}\ \mbox{\hyperlink{classStudent_ac6e5b4c8d51750cd77dcc4239b797f13}{name}},\ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{classStudent_a40849ea6918f6d5775bc5fb03486a5e6}{surname}},\ vector<int>\ \mbox{\hyperlink{classStudent_a8cbb108541d169023abc115302c1c2f6}{homeworkGrades}},\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classStudent_a6275bf401dfedc1d7137324bfe6986b2}{examGrade}})\ :\ \mbox{\hyperlink{classHuman}{Human}}(\mbox{\hyperlink{classStudent_ac6e5b4c8d51750cd77dcc4239b797f13}{name}},\ \mbox{\hyperlink{classStudent_a40849ea6918f6d5775bc5fb03486a5e6}{surname}}),\ examGrade\_(\mbox{\hyperlink{classStudent_a6275bf401dfedc1d7137324bfe6986b2}{examGrade}}),\ homeworkGrades\_(\mbox{\hyperlink{classStudent_a8cbb108541d169023abc115302c1c2f6}{homeworkGrades}})\ \{\}}
+\DoxyCodeLine{00031\ \ \ \ \ \mbox{\hyperlink{classStudent_af9168cedbfa5565cf0b20c1a9d3f5c9d}{Student}}(std::istream\&\ is);}
+\DoxyCodeLine{00032\ \ \ \ \ \mbox{\hyperlink{classStudent_a05b37ffb050ddb039db63a8764d790cb}{Student}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classStudent}{Student}}\&\ other)}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ :\ \mbox{\hyperlink{classHuman}{Human}}(other),}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \ \ examGrade\_(other.examGrade\_),}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \ \ homeworkGrades\_(other.homeworkGrades\_)\ \{\}}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ \ \ \ \ \mbox{\hyperlink{classStudent_a154f8e92f220eff931891d336ebed0be}{Student}}(\mbox{\hyperlink{classStudent}{Student}}\&\&\ other)\ noexcept}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ :\ \mbox{\hyperlink{classHuman_a1e7ebe2c710e3026b8f8f0882e2a0475}{Human}}(std::move(other)),}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \ \ examGrade\_(other.examGrade\_),}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \ \ homeworkGrades\_(std::move(other.homeworkGrades\_))\ \{}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ other.examGrade\_\ =\ 0;}
+\DoxyCodeLine{00042\ \ \ \ \ \}}
+\DoxyCodeLine{00043\ \ \ \ \ \mbox{\hyperlink{classStudent}{Student}}\&\ \mbox{\hyperlink{classStudent_ad05dd6148523a2a8b38128b60297b52a}{operator=}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classStudent}{Student}}\&\ other)\ \{}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\textcolor{keyword}{this}\ ==\ \&other)\ \{}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ *\textcolor{keyword}{this};}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classHuman_aa192cac116a9999391cada8b99d34dd5}{Human::operator=}}(other);}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ examGrade\_\ =\ other.examGrade\_;}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ homeworkGrades\_\ =\ other.homeworkGrades\_;}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ *\textcolor{keyword}{this};}
+\DoxyCodeLine{00053\ \ \ \ \ \}}
+\DoxyCodeLine{00054\ \ \ \ \ \mbox{\hyperlink{classStudent}{Student}}\&\ \mbox{\hyperlink{classStudent_a458365d8621d8e49e17ed809a272feeb}{operator=}}(\mbox{\hyperlink{classStudent}{Student}}\&\&\ other)\ \textcolor{keyword}{noexcept}\ \{}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\textcolor{keyword}{this}\ ==\ \&other)\ \{}
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ *\textcolor{keyword}{this};}
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classHuman_aa192cac116a9999391cada8b99d34dd5}{Human::operator=}}(std::move(other));}
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ examGrade\_\ =\ other.examGrade\_;}
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ homeworkGrades\_\ =\ std::move(other.homeworkGrades\_);}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ other.examGrade\_\ =\ 0;}
+\DoxyCodeLine{00063\ }
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ *\textcolor{keyword}{this};}
+\DoxyCodeLine{00065\ \ \ \ \ \}}
+\DoxyCodeLine{00066\ \ \ \ \ \mbox{\hyperlink{classStudent_a54a8ea060d6cd04222c3a2f89829f105}{\string~Student}}()\ \{}
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classHuman_aae88b7b47fcb48ae282483b89b753927}{name\_}}.clear();}
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classHuman_aa6632ccd30ebfa087e0d875b2d50340c}{surname\_}}.clear();}
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ homeworkGrades\_.clear();}
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ examGrade\_\ =\ 0;}
+\DoxyCodeLine{00071\ \ \ \ \ \}}
+\DoxyCodeLine{00072\ }
+\DoxyCodeLine{00073\ \ \ \ \ \textcolor{keyword}{using\ }\mbox{\hyperlink{classHuman_ac6e5b4c8d51750cd77dcc4239b797f13}{Human::name}};}
+\DoxyCodeLine{00074\ \ \ \ \ \textcolor{keyword}{using\ }\mbox{\hyperlink{classHuman_a40849ea6918f6d5775bc5fb03486a5e6}{Human::surname}};}
+\DoxyCodeLine{00075\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classStudent_a6275bf401dfedc1d7137324bfe6986b2}{examGrade}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ examGrade\_;\ \}}
+\DoxyCodeLine{00076\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keyword}{const}\ vector<int>\&\ \mbox{\hyperlink{classStudent_a8cbb108541d169023abc115302c1c2f6}{homeworkGrades}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ homeworkGrades\_;\ \}}
+\DoxyCodeLine{00077\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{classStudent_ab521819e84810ba8441d821ea7710820}{finalGradeAverage}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00078\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{classStudent_a37a67609edb41c95a920cef88964e706}{finalGradeMedian}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00079\ }
+\DoxyCodeLine{00080\ \ \ \ \ \textcolor{keyword}{using\ }\mbox{\hyperlink{classHuman_a6522f821677de9cc257f281f7e314174}{Human::setName}};}
+\DoxyCodeLine{00081\ \ \ \ \ \textcolor{keyword}{using\ }\mbox{\hyperlink{classHuman_aa9d52551d15eeb3f43530bc58c257681}{Human::setSurname}};}
+\DoxyCodeLine{00082\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classStudent_ae1491eaa125c02c0ac8f52340f5c157b}{setExamGrade}}(\textcolor{keywordtype}{int}\ \mbox{\hyperlink{classStudent_a6275bf401dfedc1d7137324bfe6986b2}{examGrade}})\ \{\ examGrade\_\ =\ \mbox{\hyperlink{classStudent_a6275bf401dfedc1d7137324bfe6986b2}{examGrade}};\ \}}
+\DoxyCodeLine{00083\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classStudent_a6db17fdf7281d48e000c322ad3f1adee}{setHomeworkGrades}}(vector<int>\ \mbox{\hyperlink{classStudent_a8cbb108541d169023abc115302c1c2f6}{homeworkGrades}})\ \{\ homeworkGrades\_\ =\ \mbox{\hyperlink{classStudent_a8cbb108541d169023abc115302c1c2f6}{homeworkGrades}};\ \}}
+\DoxyCodeLine{00084\ }
+\DoxyCodeLine{00085\ \ \ \ \ std::istream\&\ \mbox{\hyperlink{classStudent_a9c5cbd2b4ce6628b671a1dfd54faa0f6}{readStudent}}(std::istream\&\ is);}
+\DoxyCodeLine{00086\ \ \ \ \ \textcolor{keyword}{friend}\ std::istream\&\ \mbox{\hyperlink{classStudent_a32b1c2a3e1ebcfea4bc12270cb8bca98}{operator>>}}(std::istream\&\ is,\ \mbox{\hyperlink{classStudent}{Student}}\&\ student);}
+\DoxyCodeLine{00087\ \ \ \ \ \textcolor{keyword}{friend}\ std::ostream\&\ \mbox{\hyperlink{classStudent_a3927a6e81bf7a6bbb4a2322f13f4ac0e}{operator<<}}(std::ostream\&\ os,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classStudent}{Student}}\&\ student);}
+\DoxyCodeLine{00088\ \};}
+
+\end{DoxyCode}

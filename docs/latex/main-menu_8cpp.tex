@@ -1,0 +1,104 @@
+\doxysection{src/main-\/menu.cpp File Reference}
+\hypertarget{main-menu_8cpp}{}\label{main-menu_8cpp}\index{src/main-\/menu.cpp@{src/main-\/menu.cpp}}
+{\ttfamily \#include "{}student-\/menu.\+h"{}}\newline
+{\ttfamily \#include "{}create-\/student.\+h"{}}\newline
+{\ttfamily \#include "{}input-\/utils.\+h"{}}\newline
+{\ttfamily \#include "{}output-\/results.\+h"{}}\newline
+{\ttfamily \#include "{}generate-\/student-\/list.\+h"{}}\newline
+{\ttfamily \#include "{}generate-\/student-\/list-\/test.\+h"{}}\newline
+{\ttfamily \#include "{}output-\/nuskriausti-\/and-\/protingi-\/test.\+h"{}}\newline
+{\ttfamily \#include "{}student-\/rule-\/of-\/five-\/operators-\/test.\+h"{}}\newline
+{\ttfamily \#include "{}sort-\/nuskriausti-\/and-\/protingi.\+h"{}}\newline
+{\ttfamily \#include "{}sort-\/students.\+h"{}}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$deque$>$}\newline
+{\ttfamily \#include $<$list$>$}\newline
+{\ttfamily \#include $<$stdexcept$>$}\newline
+Include dependency graph for main-\/menu.cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main-menu_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{main-menu_8cpp_a547646815560a705ed2ab461dbf46d04}{show\+Main\+Menu}} ()
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{main-menu_8cpp_a36861ed3158637e6adda4f6e43dca588}{handle\+Menu\+Choice}} (int choice, T \&students)
+\item 
+template void \mbox{\hyperlink{main-menu_8cpp_aeebd12994ce60f274fb1d8bdda804de3}{handle\+Menu\+Choice$<$ vector$<$ Student $>$ $>$}} (int, vector$<$ \mbox{\hyperlink{classStudent}{Student}} $>$ \&)
+\item 
+template void \mbox{\hyperlink{main-menu_8cpp_a17c24f8269577fa0464b810112c2760c}{handle\+Menu\+Choice$<$ std\+::list$<$ Student $>$ $>$}} (int, std\+::list$<$ \mbox{\hyperlink{classStudent}{Student}} $>$ \&)
+\item 
+template void \mbox{\hyperlink{main-menu_8cpp_ac3b21e3dc5302b60e9200072a38cee2c}{handle\+Menu\+Choice$<$ std\+::deque$<$ Student $>$ $>$}} (int, std\+::deque$<$ \mbox{\hyperlink{classStudent}{Student}} $>$ \&)
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{main-menu_8cpp_a1123b804021639f84dba129d8c294dd1}{start\+Main\+Menu}} ()
+\item 
+template void \mbox{\hyperlink{main-menu_8cpp_a83132e84ba0bf29648efb286887d5109}{start\+Main\+Menu$<$ vector$<$ Student $>$ $>$}} ()
+\item 
+template void \mbox{\hyperlink{main-menu_8cpp_ada1215810c406910c252a3b210fd24b2}{start\+Main\+Menu$<$ std\+::list$<$ Student $>$ $>$}} ()
+\item 
+template void \mbox{\hyperlink{main-menu_8cpp_ad1939fd38672518bff3b52c1ebe80e60}{start\+Main\+Menu$<$ std\+::deque$<$ Student $>$ $>$}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{main-menu_8cpp_a36861ed3158637e6adda4f6e43dca588}\label{main-menu_8cpp_a36861ed3158637e6adda4f6e43dca588} 
+\index{main-\/menu.cpp@{main-\/menu.cpp}!handleMenuChoice@{handleMenuChoice}}
+\index{handleMenuChoice@{handleMenuChoice}!main-\/menu.cpp@{main-\/menu.cpp}}
+\doxysubsubsection{\texorpdfstring{handleMenuChoice()}{handleMenuChoice()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void handle\+Menu\+Choice (\begin{DoxyParamCaption}\item[{int}]{choice,  }\item[{T \&}]{students }\end{DoxyParamCaption})}
+
+\Hypertarget{main-menu_8cpp_ac3b21e3dc5302b60e9200072a38cee2c}\label{main-menu_8cpp_ac3b21e3dc5302b60e9200072a38cee2c} 
+\index{main-\/menu.cpp@{main-\/menu.cpp}!handleMenuChoice$<$ std::deque$<$ Student $>$ $>$@{handleMenuChoice$<$ std::deque$<$ Student $>$ $>$}}
+\index{handleMenuChoice$<$ std::deque$<$ Student $>$ $>$@{handleMenuChoice$<$ std::deque$<$ Student $>$ $>$}!main-\/menu.cpp@{main-\/menu.cpp}}
+\doxysubsubsection{\texorpdfstring{handleMenuChoice$<$ std::deque$<$ Student $>$ $>$()}{handleMenuChoice< std::deque< Student > >()}}
+{\footnotesize\ttfamily template void \mbox{\hyperlink{main-menu_8cpp_a36861ed3158637e6adda4f6e43dca588}{handle\+Menu\+Choice}}$<$ std\+::deque$<$ \mbox{\hyperlink{classStudent}{Student}} $>$ $>$ (\begin{DoxyParamCaption}\item[{int}]{,  }\item[{std\+::deque$<$ \mbox{\hyperlink{classStudent}{Student}} $>$ \&}]{ }\end{DoxyParamCaption})}
+
+\Hypertarget{main-menu_8cpp_a17c24f8269577fa0464b810112c2760c}\label{main-menu_8cpp_a17c24f8269577fa0464b810112c2760c} 
+\index{main-\/menu.cpp@{main-\/menu.cpp}!handleMenuChoice$<$ std::list$<$ Student $>$ $>$@{handleMenuChoice$<$ std::list$<$ Student $>$ $>$}}
+\index{handleMenuChoice$<$ std::list$<$ Student $>$ $>$@{handleMenuChoice$<$ std::list$<$ Student $>$ $>$}!main-\/menu.cpp@{main-\/menu.cpp}}
+\doxysubsubsection{\texorpdfstring{handleMenuChoice$<$ std::list$<$ Student $>$ $>$()}{handleMenuChoice< std::list< Student > >()}}
+{\footnotesize\ttfamily template void \mbox{\hyperlink{main-menu_8cpp_a36861ed3158637e6adda4f6e43dca588}{handle\+Menu\+Choice}}$<$ std\+::list$<$ \mbox{\hyperlink{classStudent}{Student}} $>$ $>$ (\begin{DoxyParamCaption}\item[{int}]{,  }\item[{std\+::list$<$ \mbox{\hyperlink{classStudent}{Student}} $>$ \&}]{ }\end{DoxyParamCaption})}
+
+\Hypertarget{main-menu_8cpp_aeebd12994ce60f274fb1d8bdda804de3}\label{main-menu_8cpp_aeebd12994ce60f274fb1d8bdda804de3} 
+\index{main-\/menu.cpp@{main-\/menu.cpp}!handleMenuChoice$<$ vector$<$ Student $>$ $>$@{handleMenuChoice$<$ vector$<$ Student $>$ $>$}}
+\index{handleMenuChoice$<$ vector$<$ Student $>$ $>$@{handleMenuChoice$<$ vector$<$ Student $>$ $>$}!main-\/menu.cpp@{main-\/menu.cpp}}
+\doxysubsubsection{\texorpdfstring{handleMenuChoice$<$ vector$<$ Student $>$ $>$()}{handleMenuChoice< vector< Student > >()}}
+{\footnotesize\ttfamily template void \mbox{\hyperlink{main-menu_8cpp_a36861ed3158637e6adda4f6e43dca588}{handle\+Menu\+Choice}}$<$ vector$<$ \mbox{\hyperlink{classStudent}{Student}} $>$ $>$ (\begin{DoxyParamCaption}\item[{int}]{,  }\item[{vector$<$ \mbox{\hyperlink{classStudent}{Student}} $>$ \&}]{ }\end{DoxyParamCaption})}
+
+\Hypertarget{main-menu_8cpp_a547646815560a705ed2ab461dbf46d04}\label{main-menu_8cpp_a547646815560a705ed2ab461dbf46d04} 
+\index{main-\/menu.cpp@{main-\/menu.cpp}!showMainMenu@{showMainMenu}}
+\index{showMainMenu@{showMainMenu}!main-\/menu.cpp@{main-\/menu.cpp}}
+\doxysubsubsection{\texorpdfstring{showMainMenu()}{showMainMenu()}}
+{\footnotesize\ttfamily void show\+Main\+Menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{main-menu_8cpp_a1123b804021639f84dba129d8c294dd1}\label{main-menu_8cpp_a1123b804021639f84dba129d8c294dd1} 
+\index{main-\/menu.cpp@{main-\/menu.cpp}!startMainMenu@{startMainMenu}}
+\index{startMainMenu@{startMainMenu}!main-\/menu.cpp@{main-\/menu.cpp}}
+\doxysubsubsection{\texorpdfstring{startMainMenu()}{startMainMenu()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void start\+Main\+Menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{main-menu_8cpp_ad1939fd38672518bff3b52c1ebe80e60}\label{main-menu_8cpp_ad1939fd38672518bff3b52c1ebe80e60} 
+\index{main-\/menu.cpp@{main-\/menu.cpp}!startMainMenu$<$ std::deque$<$ Student $>$ $>$@{startMainMenu$<$ std::deque$<$ Student $>$ $>$}}
+\index{startMainMenu$<$ std::deque$<$ Student $>$ $>$@{startMainMenu$<$ std::deque$<$ Student $>$ $>$}!main-\/menu.cpp@{main-\/menu.cpp}}
+\doxysubsubsection{\texorpdfstring{startMainMenu$<$ std::deque$<$ Student $>$ $>$()}{startMainMenu< std::deque< Student > >()}}
+{\footnotesize\ttfamily template void \mbox{\hyperlink{main-menu_8cpp_a1123b804021639f84dba129d8c294dd1}{start\+Main\+Menu}}$<$ std\+::deque$<$ \mbox{\hyperlink{classStudent}{Student}} $>$ $>$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{main-menu_8cpp_ada1215810c406910c252a3b210fd24b2}\label{main-menu_8cpp_ada1215810c406910c252a3b210fd24b2} 
+\index{main-\/menu.cpp@{main-\/menu.cpp}!startMainMenu$<$ std::list$<$ Student $>$ $>$@{startMainMenu$<$ std::list$<$ Student $>$ $>$}}
+\index{startMainMenu$<$ std::list$<$ Student $>$ $>$@{startMainMenu$<$ std::list$<$ Student $>$ $>$}!main-\/menu.cpp@{main-\/menu.cpp}}
+\doxysubsubsection{\texorpdfstring{startMainMenu$<$ std::list$<$ Student $>$ $>$()}{startMainMenu< std::list< Student > >()}}
+{\footnotesize\ttfamily template void \mbox{\hyperlink{main-menu_8cpp_a1123b804021639f84dba129d8c294dd1}{start\+Main\+Menu}}$<$ std\+::list$<$ \mbox{\hyperlink{classStudent}{Student}} $>$ $>$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{main-menu_8cpp_a83132e84ba0bf29648efb286887d5109}\label{main-menu_8cpp_a83132e84ba0bf29648efb286887d5109} 
+\index{main-\/menu.cpp@{main-\/menu.cpp}!startMainMenu$<$ vector$<$ Student $>$ $>$@{startMainMenu$<$ vector$<$ Student $>$ $>$}}
+\index{startMainMenu$<$ vector$<$ Student $>$ $>$@{startMainMenu$<$ vector$<$ Student $>$ $>$}!main-\/menu.cpp@{main-\/menu.cpp}}
+\doxysubsubsection{\texorpdfstring{startMainMenu$<$ vector$<$ Student $>$ $>$()}{startMainMenu< vector< Student > >()}}
+{\footnotesize\ttfamily template void \mbox{\hyperlink{main-menu_8cpp_a1123b804021639f84dba129d8c294dd1}{start\+Main\+Menu}}$<$ vector$<$ \mbox{\hyperlink{classStudent}{Student}} $>$ $>$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+

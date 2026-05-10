@@ -1,0 +1,34 @@
+\doxysection{human.\+h}
+\hypertarget{human_8h_source}{}\label{human_8h_source}\index{include/human.h@{include/human.h}}
+\mbox{\hyperlink{human_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{keyword}{using\ }std::string;}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classHuman}{Human}}\ \{}
+\DoxyCodeLine{00008\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00009\ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{classHuman_aae88b7b47fcb48ae282483b89b753927}{name\_}};}
+\DoxyCodeLine{00010\ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{classHuman_aa6632ccd30ebfa087e0d875b2d50340c}{surname\_}};}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00013\ \ \ \ \ \mbox{\hyperlink{classHuman_a1e7ebe2c710e3026b8f8f0882e2a0475}{Human}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00014\ \ \ \ \ \mbox{\hyperlink{classHuman_ae9064f4eaf69b2822c6cfcfddb841d61}{Human}}(\textcolor{keywordtype}{string}\ \mbox{\hyperlink{classHuman_ac6e5b4c8d51750cd77dcc4239b797f13}{name}},\ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{classHuman_a40849ea6918f6d5775bc5fb03486a5e6}{surname}})\ :\ \mbox{\hyperlink{classHuman_aae88b7b47fcb48ae282483b89b753927}{name\_}}(\mbox{\hyperlink{classHuman_ac6e5b4c8d51750cd77dcc4239b797f13}{name}}),\ \mbox{\hyperlink{classHuman_aa6632ccd30ebfa087e0d875b2d50340c}{surname\_}}(\mbox{\hyperlink{classHuman_a40849ea6918f6d5775bc5fb03486a5e6}{surname}})\ \{\}}
+\DoxyCodeLine{00015\ \ \ \ \ \mbox{\hyperlink{classHuman_ab0c14d334117d7f0334e5387cbea9b8c}{Human}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classHuman}{Human}}\&)\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00016\ \ \ \ \ \mbox{\hyperlink{classHuman_ae5b96dfe2f373440668ca94d0642a630}{Human}}(\mbox{\hyperlink{classHuman}{Human}}\&\&)\ noexcept\ =\ default;}
+\DoxyCodeLine{00017\ \ \ \ \ \mbox{\hyperlink{classHuman}{Human}}\&\ operator=(const\ \mbox{\hyperlink{classHuman}{Human}}\&)\ =\ default;}
+\DoxyCodeLine{00018\ \ \ \ \ \mbox{\hyperlink{classHuman}{Human}}\&\ operator=(\mbox{\hyperlink{classHuman}{Human}}\&\&)\ noexcept\ =\ default;}
+\DoxyCodeLine{00019\ \ \ \ \ virtual\ \string~\mbox{\hyperlink{classHuman}{Human}}()\ =\ 0;}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \ \ \ \ inline\ const\ \textcolor{keywordtype}{string}\&\ \mbox{\hyperlink{classHuman_ac6e5b4c8d51750cd77dcc4239b797f13}{name}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classHuman_aae88b7b47fcb48ae282483b89b753927}{name\_}};\ \}}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\&\ \mbox{\hyperlink{classHuman_a40849ea6918f6d5775bc5fb03486a5e6}{surname}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classHuman_aa6632ccd30ebfa087e0d875b2d50340c}{surname\_}};\ \}}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classHuman_a6522f821677de9cc257f281f7e314174}{setName}}(\textcolor{keywordtype}{string}\ \mbox{\hyperlink{classHuman_ac6e5b4c8d51750cd77dcc4239b797f13}{name}})\ \{\ \mbox{\hyperlink{classHuman_aae88b7b47fcb48ae282483b89b753927}{name\_}}\ =\ \mbox{\hyperlink{classHuman_ac6e5b4c8d51750cd77dcc4239b797f13}{name}};\ \}}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classHuman_aa9d52551d15eeb3f43530bc58c257681}{setSurname}}(\textcolor{keywordtype}{string}\ \mbox{\hyperlink{classHuman_a40849ea6918f6d5775bc5fb03486a5e6}{surname}})\ \{\ \mbox{\hyperlink{classHuman_aa6632ccd30ebfa087e0d875b2d50340c}{surname\_}}\ =\ \mbox{\hyperlink{classHuman_a40849ea6918f6d5775bc5fb03486a5e6}{surname}};\ \}}
+\DoxyCodeLine{00026\ \};}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \textcolor{keyword}{inline}\ \mbox{\hyperlink{classHuman_acba7d1387c4fc739b6749283f66a9451}{Human::\string~Human}}()\ =\ \textcolor{keywordflow}{default};}
+
+\end{DoxyCode}

@@ -1,0 +1,58 @@
+\doxysection{src/generate-\/student-\/list.cpp File Reference}
+\hypertarget{generate-student-list_8cpp}{}\label{generate-student-list_8cpp}\index{src/generate-\/student-\/list.cpp@{src/generate-\/student-\/list.cpp}}
+{\ttfamily \#include "{}generate-\/student-\/list.\+h"{}}\newline
+{\ttfamily \#include "{}input-\/utils.\+h"{}}\newline
+{\ttfamily \#include "{}student.\+h"{}}\newline
+{\ttfamily \#include "{}create-\/student.\+h"{}}\newline
+{\ttfamily \#include "{}grading-\/utils.\+h"{}}\newline
+{\ttfamily \#include $<$cctype$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$iomanip$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+{\ttfamily \#include $<$stdexcept$>$}\newline
+Include dependency graph for generate-\/student-\/list.cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{generate-student-list_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{generate-student-list_8cpp_a57c19cfdcb01ee0bb2d6a75a983d8b3b}{print\+Header}} (std\+::ostream \&output)
+\item 
+void \mbox{\hyperlink{generate-student-list_8cpp_a0ab743752d7c128677e4dcb379fb9cee}{print\+Student\+List\+Row}} (std\+::ostream \&output, const \mbox{\hyperlink{classStudent}{Student}} \&s)
+\item 
+void \mbox{\hyperlink{generate-student-list_8cpp_a20dfa1661b7eefac41a2bb844754d7bd}{generate\+Student\+List\+File}} (int student\+Count, const std\+::string \&filename)
+\item 
+void \mbox{\hyperlink{generate-student-list_8cpp_a2034c2ac666e7398be55975a5426bc9a}{handle\+Generate\+Student\+List\+File}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{generate-student-list_8cpp_a20dfa1661b7eefac41a2bb844754d7bd}\label{generate-student-list_8cpp_a20dfa1661b7eefac41a2bb844754d7bd} 
+\index{generate-\/student-\/list.cpp@{generate-\/student-\/list.cpp}!generateStudentListFile@{generateStudentListFile}}
+\index{generateStudentListFile@{generateStudentListFile}!generate-\/student-\/list.cpp@{generate-\/student-\/list.cpp}}
+\doxysubsubsection{\texorpdfstring{generateStudentListFile()}{generateStudentListFile()}}
+{\footnotesize\ttfamily void generate\+Student\+List\+File (\begin{DoxyParamCaption}\item[{int}]{student\+Count,  }\item[{const std\+::string \&}]{filename }\end{DoxyParamCaption})}
+
+\Hypertarget{generate-student-list_8cpp_a2034c2ac666e7398be55975a5426bc9a}\label{generate-student-list_8cpp_a2034c2ac666e7398be55975a5426bc9a} 
+\index{generate-\/student-\/list.cpp@{generate-\/student-\/list.cpp}!handleGenerateStudentListFile@{handleGenerateStudentListFile}}
+\index{handleGenerateStudentListFile@{handleGenerateStudentListFile}!generate-\/student-\/list.cpp@{generate-\/student-\/list.cpp}}
+\doxysubsubsection{\texorpdfstring{handleGenerateStudentListFile()}{handleGenerateStudentListFile()}}
+{\footnotesize\ttfamily void handle\+Generate\+Student\+List\+File (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{generate-student-list_8cpp_a57c19cfdcb01ee0bb2d6a75a983d8b3b}\label{generate-student-list_8cpp_a57c19cfdcb01ee0bb2d6a75a983d8b3b} 
+\index{generate-\/student-\/list.cpp@{generate-\/student-\/list.cpp}!printHeader@{printHeader}}
+\index{printHeader@{printHeader}!generate-\/student-\/list.cpp@{generate-\/student-\/list.cpp}}
+\doxysubsubsection{\texorpdfstring{printHeader()}{printHeader()}}
+{\footnotesize\ttfamily void print\+Header (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{output }\end{DoxyParamCaption})}
+
+\Hypertarget{generate-student-list_8cpp_a0ab743752d7c128677e4dcb379fb9cee}\label{generate-student-list_8cpp_a0ab743752d7c128677e4dcb379fb9cee} 
+\index{generate-\/student-\/list.cpp@{generate-\/student-\/list.cpp}!printStudentListRow@{printStudentListRow}}
+\index{printStudentListRow@{printStudentListRow}!generate-\/student-\/list.cpp@{generate-\/student-\/list.cpp}}
+\doxysubsubsection{\texorpdfstring{printStudentListRow()}{printStudentListRow()}}
+{\footnotesize\ttfamily void print\+Student\+List\+Row (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{output,  }\item[{const \mbox{\hyperlink{classStudent}{Student}} \&}]{s }\end{DoxyParamCaption})}
+

@@ -1,0 +1,256 @@
+\doxysection{Student Class Reference}
+\hypertarget{classStudent}{}\label{classStudent}\index{Student@{Student}}
+
+
+{\ttfamily \#include $<$student.\+h$>$}
+
+
+
+Inheritance diagram for Student\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=134pt]{classStudent__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Student\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=156pt]{classStudent__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classStudent_af9168cedbfa5565cf0b20c1a9d3f5c9d}{Student}} ()
+\item 
+\mbox{\hyperlink{classStudent_a8d86334cc4706373de2c4bcaf183db88}{Student}} (string \mbox{\hyperlink{classStudent_ac6e5b4c8d51750cd77dcc4239b797f13}{name}}, string \mbox{\hyperlink{classStudent_a40849ea6918f6d5775bc5fb03486a5e6}{surname}})
+\item 
+\mbox{\hyperlink{classStudent_afc6e6f6b0f00e5cf663ee379284bcd1c}{Student}} (string \mbox{\hyperlink{classStudent_ac6e5b4c8d51750cd77dcc4239b797f13}{name}}, string \mbox{\hyperlink{classStudent_a40849ea6918f6d5775bc5fb03486a5e6}{surname}}, vector$<$ int $>$ \mbox{\hyperlink{classStudent_a8cbb108541d169023abc115302c1c2f6}{homework\+Grades}}, int \mbox{\hyperlink{classStudent_a6275bf401dfedc1d7137324bfe6986b2}{exam\+Grade}})
+\item 
+\mbox{\hyperlink{classStudent_a63c032998418356143a76538b65acc02}{Student}} (std\+::istream \&is)
+\item 
+\mbox{\hyperlink{classStudent_a05b37ffb050ddb039db63a8764d790cb}{Student}} (const \mbox{\hyperlink{classStudent}{Student}} \&other)
+\item 
+\mbox{\hyperlink{classStudent_a154f8e92f220eff931891d336ebed0be}{Student}} (\mbox{\hyperlink{classStudent}{Student}} \&\&other) noexcept
+\item 
+\mbox{\hyperlink{classStudent}{Student}} \& \mbox{\hyperlink{classStudent_ad05dd6148523a2a8b38128b60297b52a}{operator=}} (const \mbox{\hyperlink{classStudent}{Student}} \&other)
+\item 
+\mbox{\hyperlink{classStudent}{Student}} \& \mbox{\hyperlink{classStudent_a458365d8621d8e49e17ed809a272feeb}{operator=}} (\mbox{\hyperlink{classStudent}{Student}} \&\&other) noexcept
+\item 
+\mbox{\hyperlink{classStudent_a54a8ea060d6cd04222c3a2f89829f105}{\texorpdfstring{$\sim$}{\string~}\+Student}} ()
+\item 
+int \mbox{\hyperlink{classStudent_a6275bf401dfedc1d7137324bfe6986b2}{exam\+Grade}} () const
+\item 
+const vector$<$ int $>$ \& \mbox{\hyperlink{classStudent_a8cbb108541d169023abc115302c1c2f6}{homework\+Grades}} () const
+\item 
+double \mbox{\hyperlink{classStudent_ab521819e84810ba8441d821ea7710820}{final\+Grade\+Average}} () const
+\item 
+double \mbox{\hyperlink{classStudent_a37a67609edb41c95a920cef88964e706}{final\+Grade\+Median}} () const
+\item 
+void \mbox{\hyperlink{classStudent_ae1491eaa125c02c0ac8f52340f5c157b}{set\+Exam\+Grade}} (int \mbox{\hyperlink{classStudent_a6275bf401dfedc1d7137324bfe6986b2}{exam\+Grade}})
+\item 
+void \mbox{\hyperlink{classStudent_a6db17fdf7281d48e000c322ad3f1adee}{set\+Homework\+Grades}} (vector$<$ int $>$ \mbox{\hyperlink{classStudent_a8cbb108541d169023abc115302c1c2f6}{homework\+Grades}})
+\item 
+std\+::istream \& \mbox{\hyperlink{classStudent_a9c5cbd2b4ce6628b671a1dfd54faa0f6}{read\+Student}} (std\+::istream \&is)
+\item 
+const string \& \mbox{\hyperlink{classStudent_ac6e5b4c8d51750cd77dcc4239b797f13}{name}} () const
+\item 
+const string \& \mbox{\hyperlink{classStudent_a40849ea6918f6d5775bc5fb03486a5e6}{surname}} () const
+\item 
+void \mbox{\hyperlink{classStudent_a6522f821677de9cc257f281f7e314174}{set\+Name}} (string \mbox{\hyperlink{classStudent_ac6e5b4c8d51750cd77dcc4239b797f13}{name}})
+\item 
+void \mbox{\hyperlink{classStudent_aa9d52551d15eeb3f43530bc58c257681}{set\+Surname}} (string \mbox{\hyperlink{classStudent_a40849ea6918f6d5775bc5fb03486a5e6}{surname}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classHuman}{Human}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classHuman_a1e7ebe2c710e3026b8f8f0882e2a0475}{Human}} ()=default
+\item 
+\mbox{\hyperlink{classHuman_ae9064f4eaf69b2822c6cfcfddb841d61}{Human}} (string \mbox{\hyperlink{classHuman_ac6e5b4c8d51750cd77dcc4239b797f13}{name}}, string \mbox{\hyperlink{classHuman_a40849ea6918f6d5775bc5fb03486a5e6}{surname}})
+\item 
+\mbox{\hyperlink{classHuman_ab0c14d334117d7f0334e5387cbea9b8c}{Human}} (const \mbox{\hyperlink{classHuman}{Human}} \&)=default
+\item 
+\mbox{\hyperlink{classHuman_ae5b96dfe2f373440668ca94d0642a630}{Human}} (\mbox{\hyperlink{classHuman}{Human}} \&\&) noexcept=default
+\item 
+\mbox{\hyperlink{classHuman}{Human}} \& \mbox{\hyperlink{classHuman_aa192cac116a9999391cada8b99d34dd5}{operator=}} (const \mbox{\hyperlink{classHuman}{Human}} \&)=default
+\item 
+\mbox{\hyperlink{classHuman}{Human}} \& \mbox{\hyperlink{classHuman_abc53e9082415618db7897920434c74cb}{operator=}} (\mbox{\hyperlink{classHuman}{Human}} \&\&) noexcept=default
+\item 
+virtual \mbox{\hyperlink{classHuman_acba7d1387c4fc739b6749283f66a9451}{\texorpdfstring{$\sim$}{\string~}\+Human}} ()=0
+\item 
+const string \& \mbox{\hyperlink{classHuman_ac6e5b4c8d51750cd77dcc4239b797f13}{name}} () const
+\item 
+const string \& \mbox{\hyperlink{classHuman_a40849ea6918f6d5775bc5fb03486a5e6}{surname}} () const
+\item 
+void \mbox{\hyperlink{classHuman_a6522f821677de9cc257f281f7e314174}{set\+Name}} (string \mbox{\hyperlink{classHuman_ac6e5b4c8d51750cd77dcc4239b797f13}{name}})
+\item 
+void \mbox{\hyperlink{classHuman_aa9d52551d15eeb3f43530bc58c257681}{set\+Surname}} (string \mbox{\hyperlink{classHuman_a40849ea6918f6d5775bc5fb03486a5e6}{surname}})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\+::istream \& \mbox{\hyperlink{classStudent_a32b1c2a3e1ebcfea4bc12270cb8bca98}{operator$>$$>$}} (std\+::istream \&is, \mbox{\hyperlink{classStudent}{Student}} \&student)
+\item 
+std\+::ostream \& \mbox{\hyperlink{classStudent_a3927a6e81bf7a6bbb4a2322f13f4ac0e}{operator$<$$<$}} (std\+::ostream \&os, const \mbox{\hyperlink{classStudent}{Student}} \&student)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classHuman}{Human}}}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{classHuman_aae88b7b47fcb48ae282483b89b753927}{name\+\_\+}}
+\item 
+string \mbox{\hyperlink{classHuman_aa6632ccd30ebfa087e0d875b2d50340c}{surname\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classStudent_af9168cedbfa5565cf0b20c1a9d3f5c9d}\label{classStudent_af9168cedbfa5565cf0b20c1a9d3f5c9d} 
+\index{Student@{Student}!Student@{Student}}
+\index{Student@{Student}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{Student()}{Student()}\hspace{0.1cm}{\footnotesize\ttfamily [1/6]}}
+{\footnotesize\ttfamily Student\+::\+Student (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classStudent_a8d86334cc4706373de2c4bcaf183db88}\label{classStudent_a8d86334cc4706373de2c4bcaf183db88} 
+\index{Student@{Student}!Student@{Student}}
+\index{Student@{Student}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{Student()}{Student()}\hspace{0.1cm}{\footnotesize\ttfamily [2/6]}}
+{\footnotesize\ttfamily Student\+::\+Student (\begin{DoxyParamCaption}\item[{string}]{name,  }\item[{string}]{surname }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classStudent_afc6e6f6b0f00e5cf663ee379284bcd1c}\label{classStudent_afc6e6f6b0f00e5cf663ee379284bcd1c} 
+\index{Student@{Student}!Student@{Student}}
+\index{Student@{Student}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{Student()}{Student()}\hspace{0.1cm}{\footnotesize\ttfamily [3/6]}}
+{\footnotesize\ttfamily Student\+::\+Student (\begin{DoxyParamCaption}\item[{string}]{name,  }\item[{string}]{surname,  }\item[{vector$<$ int $>$}]{homework\+Grades,  }\item[{int}]{exam\+Grade }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classStudent_a63c032998418356143a76538b65acc02}\label{classStudent_a63c032998418356143a76538b65acc02} 
+\index{Student@{Student}!Student@{Student}}
+\index{Student@{Student}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{Student()}{Student()}\hspace{0.1cm}{\footnotesize\ttfamily [4/6]}}
+{\footnotesize\ttfamily Student\+::\+Student (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{is }\end{DoxyParamCaption})}
+
+\Hypertarget{classStudent_a05b37ffb050ddb039db63a8764d790cb}\label{classStudent_a05b37ffb050ddb039db63a8764d790cb} 
+\index{Student@{Student}!Student@{Student}}
+\index{Student@{Student}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{Student()}{Student()}\hspace{0.1cm}{\footnotesize\ttfamily [5/6]}}
+{\footnotesize\ttfamily Student\+::\+Student (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classStudent}{Student}} \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classStudent_a154f8e92f220eff931891d336ebed0be}\label{classStudent_a154f8e92f220eff931891d336ebed0be} 
+\index{Student@{Student}!Student@{Student}}
+\index{Student@{Student}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{Student()}{Student()}\hspace{0.1cm}{\footnotesize\ttfamily [6/6]}}
+{\footnotesize\ttfamily Student\+::\+Student (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classStudent}{Student}} \&\&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+\Hypertarget{classStudent_a54a8ea060d6cd04222c3a2f89829f105}\label{classStudent_a54a8ea060d6cd04222c3a2f89829f105} 
+\index{Student@{Student}!````~Student@{\texorpdfstring{$\sim$}{\string~}Student}}
+\index{````~Student@{\texorpdfstring{$\sim$}{\string~}Student}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Student()}{\string~Student()}}
+{\footnotesize\ttfamily Student\+::\texorpdfstring{$\sim$}{\string~}\+Student (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classStudent_a6275bf401dfedc1d7137324bfe6986b2}\label{classStudent_a6275bf401dfedc1d7137324bfe6986b2} 
+\index{Student@{Student}!examGrade@{examGrade}}
+\index{examGrade@{examGrade}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{examGrade()}{examGrade()}}
+{\footnotesize\ttfamily int Student\+::exam\+Grade (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classStudent_ab521819e84810ba8441d821ea7710820}\label{classStudent_ab521819e84810ba8441d821ea7710820} 
+\index{Student@{Student}!finalGradeAverage@{finalGradeAverage}}
+\index{finalGradeAverage@{finalGradeAverage}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{finalGradeAverage()}{finalGradeAverage()}}
+{\footnotesize\ttfamily double Student\+::final\+Grade\+Average (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\Hypertarget{classStudent_a37a67609edb41c95a920cef88964e706}\label{classStudent_a37a67609edb41c95a920cef88964e706} 
+\index{Student@{Student}!finalGradeMedian@{finalGradeMedian}}
+\index{finalGradeMedian@{finalGradeMedian}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{finalGradeMedian()}{finalGradeMedian()}}
+{\footnotesize\ttfamily double Student\+::final\+Grade\+Median (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\Hypertarget{classStudent_a8cbb108541d169023abc115302c1c2f6}\label{classStudent_a8cbb108541d169023abc115302c1c2f6} 
+\index{Student@{Student}!homeworkGrades@{homeworkGrades}}
+\index{homeworkGrades@{homeworkGrades}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{homeworkGrades()}{homeworkGrades()}}
+{\footnotesize\ttfamily const vector$<$ int $>$ \& Student\+::homework\+Grades (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classStudent_ac6e5b4c8d51750cd77dcc4239b797f13}\label{classStudent_ac6e5b4c8d51750cd77dcc4239b797f13} 
+\index{Student@{Student}!name@{name}}
+\index{name@{name}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{name()}{name()}}
+{\footnotesize\ttfamily const string \& Human\+::name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classStudent_ad05dd6148523a2a8b38128b60297b52a}\label{classStudent_ad05dd6148523a2a8b38128b60297b52a} 
+\index{Student@{Student}!operator=@{operator=}}
+\index{operator=@{operator=}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classStudent}{Student}} \& Student\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classStudent}{Student}} \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classStudent_a458365d8621d8e49e17ed809a272feeb}\label{classStudent_a458365d8621d8e49e17ed809a272feeb} 
+\index{Student@{Student}!operator=@{operator=}}
+\index{operator=@{operator=}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classStudent}{Student}} \& Student\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classStudent}{Student}} \&\&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+\Hypertarget{classStudent_a9c5cbd2b4ce6628b671a1dfd54faa0f6}\label{classStudent_a9c5cbd2b4ce6628b671a1dfd54faa0f6} 
+\index{Student@{Student}!readStudent@{readStudent}}
+\index{readStudent@{readStudent}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{readStudent()}{readStudent()}}
+{\footnotesize\ttfamily std\+::istream \& Student\+::read\+Student (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{is }\end{DoxyParamCaption})}
+
+\Hypertarget{classStudent_ae1491eaa125c02c0ac8f52340f5c157b}\label{classStudent_ae1491eaa125c02c0ac8f52340f5c157b} 
+\index{Student@{Student}!setExamGrade@{setExamGrade}}
+\index{setExamGrade@{setExamGrade}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{setExamGrade()}{setExamGrade()}}
+{\footnotesize\ttfamily void Student\+::set\+Exam\+Grade (\begin{DoxyParamCaption}\item[{int}]{exam\+Grade }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classStudent_a6db17fdf7281d48e000c322ad3f1adee}\label{classStudent_a6db17fdf7281d48e000c322ad3f1adee} 
+\index{Student@{Student}!setHomeworkGrades@{setHomeworkGrades}}
+\index{setHomeworkGrades@{setHomeworkGrades}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{setHomeworkGrades()}{setHomeworkGrades()}}
+{\footnotesize\ttfamily void Student\+::set\+Homework\+Grades (\begin{DoxyParamCaption}\item[{vector$<$ int $>$}]{homework\+Grades }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classStudent_a6522f821677de9cc257f281f7e314174}\label{classStudent_a6522f821677de9cc257f281f7e314174} 
+\index{Student@{Student}!setName@{setName}}
+\index{setName@{setName}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{setName()}{setName()}}
+{\footnotesize\ttfamily void Human\+::set\+Name (\begin{DoxyParamCaption}\item[{string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classStudent_aa9d52551d15eeb3f43530bc58c257681}\label{classStudent_aa9d52551d15eeb3f43530bc58c257681} 
+\index{Student@{Student}!setSurname@{setSurname}}
+\index{setSurname@{setSurname}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{setSurname()}{setSurname()}}
+{\footnotesize\ttfamily void Human\+::set\+Surname (\begin{DoxyParamCaption}\item[{string}]{surname }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classStudent_a40849ea6918f6d5775bc5fb03486a5e6}\label{classStudent_a40849ea6918f6d5775bc5fb03486a5e6} 
+\index{Student@{Student}!surname@{surname}}
+\index{surname@{surname}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{surname()}{surname()}}
+{\footnotesize\ttfamily const string \& Human\+::surname (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Friends And Related Symbol Documentation}
+\Hypertarget{classStudent_a3927a6e81bf7a6bbb4a2322f13f4ac0e}\label{classStudent_a3927a6e81bf7a6bbb4a2322f13f4ac0e} 
+\index{Student@{Student}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily std\+::ostream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os,  }\item[{const \mbox{\hyperlink{classStudent}{Student}} \&}]{student }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+\Hypertarget{classStudent_a32b1c2a3e1ebcfea4bc12270cb8bca98}\label{classStudent_a32b1c2a3e1ebcfea4bc12270cb8bca98} 
+\index{Student@{Student}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{operator$>$$>$}{operator>>}}
+{\footnotesize\ttfamily std\+::istream \& operator$>$$>$ (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{is,  }\item[{\mbox{\hyperlink{classStudent}{Student}} \&}]{student }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{student_8h}{student.\+h}}\item 
+src/\mbox{\hyperlink{student_8cpp}{student.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,81 @@
+\doxysection{src/create-\/student.cpp File Reference}
+\hypertarget{create-student_8cpp}{}\label{create-student_8cpp}\index{src/create-\/student.cpp@{src/create-\/student.cpp}}
+{\ttfamily \#include "{}create-\/student.\+h"{}}\newline
+{\ttfamily \#include "{}input-\/utils.\+h"{}}\newline
+{\ttfamily \#include "{}grading-\/utils.\+h"{}}\newline
+{\ttfamily \#include $<$deque$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$list$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+{\ttfamily \#include $<$utility$>$}\newline
+Include dependency graph for create-\/student.cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{create-student_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classStudent}{Student}} \mbox{\hyperlink{create-student_8cpp_a11e5d332635183ffb23fdb0e131c5e71}{create\+Student\+Manual}} ()
+\item 
+\mbox{\hyperlink{classStudent}{Student}} \mbox{\hyperlink{create-student_8cpp_a25190b2cc29406ca77af925a9a8f67c4}{create\+Student\+Random\+Grades}} ()
+\item 
+string \mbox{\hyperlink{create-student_8cpp_affd767160ae12dbd38e4fcde966a7fac}{random\+Name}} ()
+\item 
+string \mbox{\hyperlink{create-student_8cpp_ab4609774ae5b93bd3b92dbfe78c75b95}{random\+Surname}} ()
+\item 
+\mbox{\hyperlink{classStudent}{Student}} \mbox{\hyperlink{create-student_8cpp_a5d0a12b420624cb7979c6233b2357676}{create\+Student\+Fully\+Random}} ()
+\item 
+{\footnotesize template$<$typename T $>$ }\\T \mbox{\hyperlink{create-student_8cpp_a5826190543d5a3a24ef4e207d8082533}{create\+Students\+From\+File}} (const string \&filename)
+\item 
+template vector$<$ \mbox{\hyperlink{classStudent}{Student}} $>$ \mbox{\hyperlink{create-student_8cpp_a45cce9bcd59a9a80ba50117d8527e883}{create\+Students\+From\+File}} (const string \&filename)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{create-student_8cpp_a5d0a12b420624cb7979c6233b2357676}\label{create-student_8cpp_a5d0a12b420624cb7979c6233b2357676} 
+\index{create-\/student.cpp@{create-\/student.cpp}!createStudentFullyRandom@{createStudentFullyRandom}}
+\index{createStudentFullyRandom@{createStudentFullyRandom}!create-\/student.cpp@{create-\/student.cpp}}
+\doxysubsubsection{\texorpdfstring{createStudentFullyRandom()}{createStudentFullyRandom()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classStudent}{Student}} create\+Student\+Fully\+Random (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{create-student_8cpp_a11e5d332635183ffb23fdb0e131c5e71}\label{create-student_8cpp_a11e5d332635183ffb23fdb0e131c5e71} 
+\index{create-\/student.cpp@{create-\/student.cpp}!createStudentManual@{createStudentManual}}
+\index{createStudentManual@{createStudentManual}!create-\/student.cpp@{create-\/student.cpp}}
+\doxysubsubsection{\texorpdfstring{createStudentManual()}{createStudentManual()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classStudent}{Student}} create\+Student\+Manual (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{create-student_8cpp_a25190b2cc29406ca77af925a9a8f67c4}\label{create-student_8cpp_a25190b2cc29406ca77af925a9a8f67c4} 
+\index{create-\/student.cpp@{create-\/student.cpp}!createStudentRandomGrades@{createStudentRandomGrades}}
+\index{createStudentRandomGrades@{createStudentRandomGrades}!create-\/student.cpp@{create-\/student.cpp}}
+\doxysubsubsection{\texorpdfstring{createStudentRandomGrades()}{createStudentRandomGrades()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classStudent}{Student}} create\+Student\+Random\+Grades (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{create-student_8cpp_a5826190543d5a3a24ef4e207d8082533}\label{create-student_8cpp_a5826190543d5a3a24ef4e207d8082533} 
+\index{create-\/student.cpp@{create-\/student.cpp}!createStudentsFromFile@{createStudentsFromFile}}
+\index{createStudentsFromFile@{createStudentsFromFile}!create-\/student.cpp@{create-\/student.cpp}}
+\doxysubsubsection{\texorpdfstring{createStudentsFromFile()}{createStudentsFromFile()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+template std\+::deque$<$ \mbox{\hyperlink{classStudent}{Student}} $>$ create\+Students\+From\+File (\begin{DoxyParamCaption}\item[{const string \&}]{filename }\end{DoxyParamCaption})}
+
+\Hypertarget{create-student_8cpp_a45cce9bcd59a9a80ba50117d8527e883}\label{create-student_8cpp_a45cce9bcd59a9a80ba50117d8527e883} 
+\index{create-\/student.cpp@{create-\/student.cpp}!createStudentsFromFile@{createStudentsFromFile}}
+\index{createStudentsFromFile@{createStudentsFromFile}!create-\/student.cpp@{create-\/student.cpp}}
+\doxysubsubsection{\texorpdfstring{createStudentsFromFile()}{createStudentsFromFile()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template vector$<$ \mbox{\hyperlink{classStudent}{Student}} $>$ create\+Students\+From\+File (\begin{DoxyParamCaption}\item[{const string \&}]{filename }\end{DoxyParamCaption})}
+
+\Hypertarget{create-student_8cpp_affd767160ae12dbd38e4fcde966a7fac}\label{create-student_8cpp_affd767160ae12dbd38e4fcde966a7fac} 
+\index{create-\/student.cpp@{create-\/student.cpp}!randomName@{randomName}}
+\index{randomName@{randomName}!create-\/student.cpp@{create-\/student.cpp}}
+\doxysubsubsection{\texorpdfstring{randomName()}{randomName()}}
+{\footnotesize\ttfamily string random\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{create-student_8cpp_ab4609774ae5b93bd3b92dbfe78c75b95}\label{create-student_8cpp_ab4609774ae5b93bd3b92dbfe78c75b95} 
+\index{create-\/student.cpp@{create-\/student.cpp}!randomSurname@{randomSurname}}
+\index{randomSurname@{randomSurname}!create-\/student.cpp@{create-\/student.cpp}}
+\doxysubsubsection{\texorpdfstring{randomSurname()}{randomSurname()}}
+{\footnotesize\ttfamily string random\+Surname (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+

@@ -1,0 +1,421 @@
+\begin{theindex}
+
+  \item {\texorpdfstring{$\sim$}{\string~}Human}
+    \subitem {Human}, \hyperpage{8}
+  \item {\texorpdfstring{$\sim$}{\string~}Student}
+    \subitem {Student}, \hyperpage{12}
+
+  \indexspace
+
+  \item {calculateFinalGradeAverage}
+    \subitem {grading-\/utils.cpp}, \hyperpage{50}
+    \subitem {grading-\/utils.h}, \hyperpage{19}
+  \item {calculateFinalGradeMedian}
+    \subitem {grading-\/utils.cpp}, \hyperpage{50}
+    \subitem {grading-\/utils.h}, \hyperpage{19}
+  \item {chooseOutputAndPrint}
+    \subitem {output-\/results.cpp}, \hyperpage{43, 44}
+    \subitem {output-\/results.h}, \hyperpage{24}
+  \item {create-\/student.cpp}
+    \subitem {createStudentFullyRandom}, \hyperpage{33}
+    \subitem {createStudentManual}, \hyperpage{33}
+    \subitem {createStudentRandomGrades}, \hyperpage{34}
+    \subitem {createStudentsFromFile}, \hyperpage{34}
+    \subitem {randomName}, \hyperpage{34}
+    \subitem {randomSurname}, \hyperpage{34}
+  \item {create-\/student.h}
+    \subitem {createStudentFullyRandom}, \hyperpage{16}
+    \subitem {createStudentManual}, \hyperpage{16}
+    \subitem {createStudentRandomGrades}, \hyperpage{16}
+    \subitem {createStudentsFromFile}, \hyperpage{16}
+    \subitem {randomName}, \hyperpage{16}
+    \subitem {randomSurname}, \hyperpage{16}
+  \item {createStudentFullyRandom}
+    \subitem {create-\/student.cpp}, \hyperpage{33}
+    \subitem {create-\/student.h}, \hyperpage{16}
+  \item {createStudentManual}
+    \subitem {create-\/student.cpp}, \hyperpage{33}
+    \subitem {create-\/student.h}, \hyperpage{16}
+  \item {createStudentRandomGrades}
+    \subitem {create-\/student.cpp}, \hyperpage{34}
+    \subitem {create-\/student.h}, \hyperpage{16}
+  \item {createStudentsFromFile}
+    \subitem {create-\/student.cpp}, \hyperpage{34}
+    \subitem {create-\/student.h}, \hyperpage{16}
+
+  \indexspace
+
+  \item {examGrade}
+    \subitem {Student}, \hyperpage{12}
+
+  \indexspace
+
+  \item {finalGradeAverage}
+    \subitem {Student}, \hyperpage{12}
+  \item {finalGradeMedian}
+    \subitem {Student}, \hyperpage{12}
+
+  \indexspace
+
+  \item {generate-\/student-\/list-\/test.cpp}
+    \subitem {handleGenerateStudentListTest}, \hyperpage{46}
+  \item {generate-\/student-\/list-\/test.h}
+    \subitem {handleGenerateStudentListTest}, \hyperpage{17}
+  \item {generate-\/student-\/list.cpp}
+    \subitem {generateStudentListFile}, \hyperpage{40}
+    \subitem {handleGenerateStudentListFile}, \hyperpage{40}
+    \subitem {printHeader}, \hyperpage{40}
+    \subitem {printStudentListRow}, \hyperpage{40}
+  \item {generate-\/student-\/list.h}
+    \subitem {generateStudentListFile}, \hyperpage{18}
+    \subitem {handleGenerateStudentListFile}, \hyperpage{18}
+  \item {generateStudentListFile}
+    \subitem {generate-\/student-\/list.cpp}, \hyperpage{40}
+    \subitem {generate-\/student-\/list.h}, \hyperpage{18}
+  \item {grading-\/utils.cpp}
+    \subitem {calculateFinalGradeAverage}, \hyperpage{50}
+    \subitem {calculateFinalGradeMedian}, \hyperpage{50}
+    \subitem {randomGrade}, \hyperpage{50}
+  \item {grading-\/utils.h}
+    \subitem {calculateFinalGradeAverage}, \hyperpage{19}
+    \subitem {calculateFinalGradeMedian}, \hyperpage{19}
+    \subitem {randomGrade}, \hyperpage{20}
+
+  \indexspace
+
+  \item {handleGenerateStudentListFile}
+    \subitem {generate-\/student-\/list.cpp}, \hyperpage{40}
+    \subitem {generate-\/student-\/list.h}, \hyperpage{18}
+  \item {handleGenerateStudentListTest}
+    \subitem {generate-\/student-\/list-\/test.cpp}, \hyperpage{46}
+    \subitem {generate-\/student-\/list-\/test.h}, \hyperpage{17}
+  \item {handleMenuChoice}
+    \subitem {main-\/menu.cpp}, \hyperpage{41}
+    \subitem {student-\/menu.h}, \hyperpage{29}
+  \item {handleMenuChoice$<$ std::deque$<$ Student $>$ $>$}
+    \subitem {main-\/menu.cpp}, \hyperpage{41}
+  \item {handleMenuChoice$<$ std::list$<$ Student $>$ $>$}
+    \subitem {main-\/menu.cpp}, \hyperpage{41}
+  \item {handleMenuChoice$<$ vector$<$ Student $>$ $>$}
+    \subitem {main-\/menu.cpp}, \hyperpage{41}
+  \item {handleSortNuskriaustiAndProtingiFromFile}
+    \subitem {sort-\/nuskriausti-\/and-\/protingi.cpp}, \hyperpage{35}
+    \subitem {sort-\/nuskriausti-\/and-\/protingi.h}, \hyperpage{26}
+  \item {handleSortNuskriaustiAndProtingiFromFile$<$ std::deque$<$ Student $>$ $>$}
+    \subitem {sort-\/nuskriausti-\/and-\/protingi.cpp}, \hyperpage{35}
+  \item {handleSortNuskriaustiAndProtingiFromFile$<$ std::list$<$ Student $>$ $>$}
+    \subitem {sort-\/nuskriausti-\/and-\/protingi.cpp}, \hyperpage{35}
+  \item {handleSortNuskriaustiAndProtingiFromFile$<$ vector$<$ Student $>$ $>$}
+    \subitem {sort-\/nuskriausti-\/and-\/protingi.cpp}, \hyperpage{35}
+  \item {handleStudentRuleOfFiveAndOperatorsTest}
+    \subitem {student-\/rule-\/of-\/five-\/operators-\/test.cpp}, 
+		\hyperpage{48}
+    \subitem {student-\/rule-\/of-\/five-\/operators-\/test.h}, 
+		\hyperpage{30}
+  \item {homeworkGrades}
+    \subitem {Student}, \hyperpage{12}
+  \item {Human}, \hyperpage{7}
+    \subitem {\texorpdfstring{$\sim$}{\string~}Human}, \hyperpage{8}
+    \subitem {Human}, \hyperpage{8}
+    \subitem {name}, \hyperpage{9}
+    \subitem {name\_}, \hyperpage{9}
+    \subitem {operator=}, \hyperpage{9}
+    \subitem {setName}, \hyperpage{9}
+    \subitem {setSurname}, \hyperpage{9}
+    \subitem {surname}, \hyperpage{9}
+    \subitem {surname\_}, \hyperpage{9}
+
+  \indexspace
+
+  \item {include/create-\/student.h}, \hyperpage{15, 16}
+  \item {include/generate-\/student-\/list-\/test.h}, \hyperpage{17}
+  \item {include/generate-\/student-\/list.h}, \hyperpage{18, 19}
+  \item {include/grading-\/utils.h}, \hyperpage{19, 20}
+  \item {include/human.h}, \hyperpage{20, 21}
+  \item {include/input-\/utils.h}, \hyperpage{21, 22}
+  \item {include/output-\/nuskriausti-\/and-\/protingi-\/test.h}, 
+		\hyperpage{23}
+  \item {include/output-\/results.h}, \hyperpage{23}, \hyperpage{25}
+  \item {include/sort-\/nuskriausti-\/and-\/protingi.h}, 
+		\hyperpage{25, 26}
+  \item {include/sort-\/students.h}, \hyperpage{27, 28}
+  \item {include/student-\/app.h}, \hyperpage{28}
+  \item {include/student-\/menu.h}, \hyperpage{29, 30}
+  \item {include/student-\/rule-\/of-\/five-\/operators-\/test.h}, 
+		\hyperpage{30, 31}
+  \item {include/student.h}, \hyperpage{31, 32}
+  \item {input-\/utils.cpp}
+    \subitem {readIntInRange}, \hyperpage{51}
+    \subitem {readSingleIntToken}, \hyperpage{51}
+    \subitem {readSingleStringToken}, \hyperpage{51}
+    \subitem {readYesOrNo}, \hyperpage{51}
+  \item {input-\/utils.h}
+    \subitem {readIntInRange}, \hyperpage{22}
+    \subitem {readSingleIntToken}, \hyperpage{22}
+    \subitem {readSingleStringToken}, \hyperpage{22}
+    \subitem {readYesOrNo}, \hyperpage{22}
+
+  \indexspace
+
+  \item {main}
+    \subitem {main.cpp}, \hyperpage{43}
+  \item {main-\/menu.cpp}
+    \subitem {handleMenuChoice}, \hyperpage{41}
+    \subitem {handleMenuChoice$<$ std::deque$<$ Student $>$ $>$}, 
+		\hyperpage{41}
+    \subitem {handleMenuChoice$<$ std::list$<$ Student $>$ $>$}, 
+		\hyperpage{41}
+    \subitem {handleMenuChoice$<$ vector$<$ Student $>$ $>$}, 
+		\hyperpage{41}
+    \subitem {showMainMenu}, \hyperpage{41}
+    \subitem {startMainMenu}, \hyperpage{41}
+    \subitem {startMainMenu$<$ std::deque$<$ Student $>$ $>$}, 
+		\hyperpage{42}
+    \subitem {startMainMenu$<$ std::list$<$ Student $>$ $>$}, 
+		\hyperpage{42}
+    \subitem {startMainMenu$<$ vector$<$ Student $>$ $>$}, 
+		\hyperpage{42}
+  \item {main.cpp}
+    \subitem {main}, \hyperpage{43}
+
+  \indexspace
+
+  \item {name}
+    \subitem {Human}, \hyperpage{9}
+    \subitem {Student}, \hyperpage{12}
+  \item {name\_}
+    \subitem {Human}, \hyperpage{9}
+
+  \indexspace
+
+  \item {operator$<$$<$}
+    \subitem {Student}, \hyperpage{14}
+    \subitem {student.cpp}, \hyperpage{45}
+  \item {operator$>$$>$}
+    \subitem {Student}, \hyperpage{14}
+    \subitem {student.cpp}, \hyperpage{45}
+  \item {operator=}
+    \subitem {Human}, \hyperpage{9}
+    \subitem {Student}, \hyperpage{13}
+  \item {output-\/nuskriausti-\/and-\/protingi-\/test.cpp}
+    \subitem {outputNuskriaustiAndProtingiTestForAllStudentsTxtFiles}, 
+		\hyperpage{47}
+    \subitem {outputNuskriaustiAndProtingiTestForContainer}, 
+		\hyperpage{47}
+  \item {output-\/nuskriausti-\/and-\/protingi-\/test.h}
+    \subitem {outputNuskriaustiAndProtingiTestForAllStudentsTxtFiles}, 
+		\hyperpage{23}
+  \item {output-\/results.cpp}
+    \subitem {chooseOutputAndPrint}, \hyperpage{43, 44}
+    \subitem {outputResults}, \hyperpage{44}
+  \item {output-\/results.h}
+    \subitem {chooseOutputAndPrint}, \hyperpage{24}
+    \subitem {outputResults}, \hyperpage{24}
+  \item {outputNuskriaustiAndProtingiTestForAllStudentsTxtFiles}
+    \subitem {output-\/nuskriausti-\/and-\/protingi-\/test.cpp}, 
+		\hyperpage{47}
+    \subitem {output-\/nuskriausti-\/and-\/protingi-\/test.h}, 
+		\hyperpage{23}
+  \item {outputNuskriaustiAndProtingiTestForContainer}
+    \subitem {output-\/nuskriausti-\/and-\/protingi-\/test.cpp}, 
+		\hyperpage{47}
+  \item {outputResults}
+    \subitem {output-\/results.cpp}, \hyperpage{44}
+    \subitem {output-\/results.h}, \hyperpage{24}
+
+  \indexspace
+
+  \item {printHeader}
+    \subitem {generate-\/student-\/list.cpp}, \hyperpage{40}
+  \item {printStudentListRow}
+    \subitem {generate-\/student-\/list.cpp}, \hyperpage{40}
+  \item {printTestResult}
+    \subitem {student-\/rule-\/of-\/five-\/operators-\/test.cpp}, 
+		\hyperpage{48}
+
+  \indexspace
+
+  \item {randomGrade}
+    \subitem {grading-\/utils.cpp}, \hyperpage{50}
+    \subitem {grading-\/utils.h}, \hyperpage{20}
+  \item {randomName}
+    \subitem {create-\/student.cpp}, \hyperpage{34}
+    \subitem {create-\/student.h}, \hyperpage{16}
+  \item {randomSurname}
+    \subitem {create-\/student.cpp}, \hyperpage{34}
+    \subitem {create-\/student.h}, \hyperpage{16}
+  \item {readIntInRange}
+    \subitem {input-\/utils.cpp}, \hyperpage{51}
+    \subitem {input-\/utils.h}, \hyperpage{22}
+  \item {readSingleIntToken}
+    \subitem {input-\/utils.cpp}, \hyperpage{51}
+    \subitem {input-\/utils.h}, \hyperpage{22}
+  \item {readSingleStringToken}
+    \subitem {input-\/utils.cpp}, \hyperpage{51}
+    \subitem {input-\/utils.h}, \hyperpage{22}
+  \item {readStudent}
+    \subitem {Student}, \hyperpage{13}
+  \item {readYesOrNo}
+    \subitem {input-\/utils.cpp}, \hyperpage{51}
+    \subitem {input-\/utils.h}, \hyperpage{22}
+  \item {runSortStudentsChoicePrompt}
+    \subitem {sort-\/students.cpp}, \hyperpage{38}
+    \subitem {sort-\/students.h}, \hyperpage{27}
+  \item {runStudentApp}
+    \subitem {student-\/app.h}, \hyperpage{28}
+
+  \indexspace
+
+  \item {setExamGrade}
+    \subitem {Student}, \hyperpage{13}
+  \item {setHomeworkGrades}
+    \subitem {Student}, \hyperpage{13}
+  \item {setName}
+    \subitem {Human}, \hyperpage{9}
+    \subitem {Student}, \hyperpage{13}
+  \item {setSurname}
+    \subitem {Human}, \hyperpage{9}
+    \subitem {Student}, \hyperpage{13}
+  \item {showMainMenu}
+    \subitem {main-\/menu.cpp}, \hyperpage{41}
+    \subitem {student-\/menu.h}, \hyperpage{29}
+  \item {sort-\/nuskriausti-\/and-\/protingi.cpp}
+    \subitem {handleSortNuskriaustiAndProtingiFromFile}, \hyperpage{35}
+    \subitem {handleSortNuskriaustiAndProtingiFromFile$<$ std::deque$<$ Student $>$ $>$}, 
+		\hyperpage{35}
+    \subitem {handleSortNuskriaustiAndProtingiFromFile$<$ std::list$<$ Student $>$ $>$}, 
+		\hyperpage{35}
+    \subitem {handleSortNuskriaustiAndProtingiFromFile$<$ vector$<$ Student $>$ $>$}, 
+		\hyperpage{35}
+    \subitem {sortNuskriaustiAndProtingiFirstStrategy}, 
+		\hyperpage{35, 36}
+    \subitem {sortNuskriaustiAndProtingiSecondStrategy}, \hyperpage{36}
+    \subitem {sortNuskriaustiAndProtingiThirdStrategy}, 
+		\hyperpage{36, 37}
+  \item {sort-\/nuskriausti-\/and-\/protingi.h}
+    \subitem {handleSortNuskriaustiAndProtingiFromFile}, \hyperpage{26}
+    \subitem {sortNuskriaustiAndProtingiFirstStrategy}, \hyperpage{26}
+    \subitem {sortNuskriaustiAndProtingiSecondStrategy}, \hyperpage{26}
+    \subitem {sortNuskriaustiAndProtingiThirdStrategy}, \hyperpage{26}
+  \item {sort-\/students.cpp}
+    \subitem {runSortStudentsChoicePrompt}, \hyperpage{38}
+    \subitem {sortStudents}, \hyperpage{38, 39}
+  \item {sort-\/students.h}
+    \subitem {runSortStudentsChoicePrompt}, \hyperpage{27}
+    \subitem {sortStudents}, \hyperpage{27}
+  \item {sortNuskriaustiAndProtingiFirstStrategy}
+    \subitem {sort-\/nuskriausti-\/and-\/protingi.cpp}, 
+		\hyperpage{35, 36}
+    \subitem {sort-\/nuskriausti-\/and-\/protingi.h}, \hyperpage{26}
+  \item {sortNuskriaustiAndProtingiSecondStrategy}
+    \subitem {sort-\/nuskriausti-\/and-\/protingi.cpp}, \hyperpage{36}
+    \subitem {sort-\/nuskriausti-\/and-\/protingi.h}, \hyperpage{26}
+  \item {sortNuskriaustiAndProtingiThirdStrategy}
+    \subitem {sort-\/nuskriausti-\/and-\/protingi.cpp}, 
+		\hyperpage{36, 37}
+    \subitem {sort-\/nuskriausti-\/and-\/protingi.h}, \hyperpage{26}
+  \item {sortStudents}
+    \subitem {sort-\/students.cpp}, \hyperpage{38, 39}
+    \subitem {sort-\/students.h}, \hyperpage{27}
+  \item {src/create-\/student.cpp}, \hyperpage{33}
+  \item {src/data-\/sorting/sort-\/nuskriausti-\/and-\/protingi.cpp}, 
+		\hyperpage{34}
+  \item {src/data-\/sorting/sort-\/students.cpp}, \hyperpage{37}
+  \item {src/generate-\/student-\/list.cpp}, \hyperpage{39}
+  \item {src/main-\/menu.cpp}, \hyperpage{40}
+  \item {src/main.cpp}, \hyperpage{42}
+  \item {src/output-\/results.cpp}, \hyperpage{43}
+  \item {src/student.cpp}, \hyperpage{45}
+  \item {src/test/generate-\/student-\/list-\/test.cpp}, \hyperpage{45}
+  \item {src/test/output-\/nuskriausti-\/and-\/protingi-\/test.cpp}, 
+		\hyperpage{46}
+  \item {src/test/student-\/rule-\/of-\/five-\/operators-\/test.cpp}, 
+		\hyperpage{47}
+  \item {src/utils/grading-\/utils.cpp}, \hyperpage{49}
+  \item {src/utils/input-\/utils.cpp}, \hyperpage{50}
+  \item {startMainMenu}
+    \subitem {main-\/menu.cpp}, \hyperpage{41}
+    \subitem {student-\/menu.h}, \hyperpage{30}
+  \item {startMainMenu$<$ std::deque$<$ Student $>$ $>$}
+    \subitem {main-\/menu.cpp}, \hyperpage{42}
+  \item {startMainMenu$<$ std::list$<$ Student $>$ $>$}
+    \subitem {main-\/menu.cpp}, \hyperpage{42}
+  \item {startMainMenu$<$ vector$<$ Student $>$ $>$}
+    \subitem {main-\/menu.cpp}, \hyperpage{42}
+  \item {Student}, \hyperpage{10}
+    \subitem {\texorpdfstring{$\sim$}{\string~}Student}, \hyperpage{12}
+    \subitem {examGrade}, \hyperpage{12}
+    \subitem {finalGradeAverage}, \hyperpage{12}
+    \subitem {finalGradeMedian}, \hyperpage{12}
+    \subitem {homeworkGrades}, \hyperpage{12}
+    \subitem {name}, \hyperpage{12}
+    \subitem {operator$<$$<$}, \hyperpage{14}
+    \subitem {operator$>$$>$}, \hyperpage{14}
+    \subitem {operator=}, \hyperpage{13}
+    \subitem {readStudent}, \hyperpage{13}
+    \subitem {setExamGrade}, \hyperpage{13}
+    \subitem {setHomeworkGrades}, \hyperpage{13}
+    \subitem {setName}, \hyperpage{13}
+    \subitem {setSurname}, \hyperpage{13}
+    \subitem {Student}, \hyperpage{11, 12}
+    \subitem {surname}, \hyperpage{13}
+  \item {student-\/app.h}
+    \subitem {runStudentApp}, \hyperpage{28}
+  \item {student-\/menu.h}
+    \subitem {handleMenuChoice}, \hyperpage{29}
+    \subitem {showMainMenu}, \hyperpage{29}
+    \subitem {startMainMenu}, \hyperpage{30}
+  \item {student-\/rule-\/of-\/five-\/operators-\/test.cpp}
+    \subitem {handleStudentRuleOfFiveAndOperatorsTest}, \hyperpage{48}
+    \subitem {printTestResult}, \hyperpage{48}
+    \subitem {testCopyAssignment}, \hyperpage{48}
+    \subitem {testCopyConstructor}, \hyperpage{48}
+    \subitem {testDestructor}, \hyperpage{48}
+    \subitem {testHumanIsAbstractAndNotInstantiable}, \hyperpage{48}
+    \subitem {testInputOperatorInvalid}, \hyperpage{48}
+    \subitem {testInputOperatorValid}, \hyperpage{48}
+    \subitem {testMoveAssignment}, \hyperpage{49}
+    \subitem {testMoveConstructor}, \hyperpage{49}
+    \subitem {testOutputOperator}, \hyperpage{49}
+  \item {student-\/rule-\/of-\/five-\/operators-\/test.h}
+    \subitem {handleStudentRuleOfFiveAndOperatorsTest}, \hyperpage{30}
+  \item {student.cpp}
+    \subitem {operator$<$$<$}, \hyperpage{45}
+    \subitem {operator$>$$>$}, \hyperpage{45}
+  \item {surname}
+    \subitem {Human}, \hyperpage{9}
+    \subitem {Student}, \hyperpage{13}
+  \item {surname\_}
+    \subitem {Human}, \hyperpage{9}
+
+  \indexspace
+
+  \item {testCopyAssignment}
+    \subitem {student-\/rule-\/of-\/five-\/operators-\/test.cpp}, 
+		\hyperpage{48}
+  \item {testCopyConstructor}
+    \subitem {student-\/rule-\/of-\/five-\/operators-\/test.cpp}, 
+		\hyperpage{48}
+  \item {testDestructor}
+    \subitem {student-\/rule-\/of-\/five-\/operators-\/test.cpp}, 
+		\hyperpage{48}
+  \item {testHumanIsAbstractAndNotInstantiable}
+    \subitem {student-\/rule-\/of-\/five-\/operators-\/test.cpp}, 
+		\hyperpage{48}
+  \item {testInputOperatorInvalid}
+    \subitem {student-\/rule-\/of-\/five-\/operators-\/test.cpp}, 
+		\hyperpage{48}
+  \item {testInputOperatorValid}
+    \subitem {student-\/rule-\/of-\/five-\/operators-\/test.cpp}, 
+		\hyperpage{48}
+  \item {testMoveAssignment}
+    \subitem {student-\/rule-\/of-\/five-\/operators-\/test.cpp}, 
+		\hyperpage{49}
+  \item {testMoveConstructor}
+    \subitem {student-\/rule-\/of-\/five-\/operators-\/test.cpp}, 
+		\hyperpage{49}
+  \item {testOutputOperator}
+    \subitem {student-\/rule-\/of-\/five-\/operators-\/test.cpp}, 
+		\hyperpage{49}
+
+\end{theindex}
