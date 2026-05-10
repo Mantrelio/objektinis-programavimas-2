@@ -1,8 +1,13 @@
 CXX = g++
 CXXFLAGS = -std=c++17 -Wall -Wextra -Iinclude
+TEST_CXXFLAGS = $(CXXFLAGS) -Ivendor/catch2
+
 TARGET = main
+TEST_TARGET = tests
 OBJDIR = build/obj
-SOURCES = src/main.cpp src/main-menu.cpp src/utils/input-utils.cpp \
+TEST_OBJDIR = build/test-obj
+
+APP_SOURCES = src/main.cpp src/main-menu.cpp src/utils/input-utils.cpp \
 	src/utils/grading-utils.cpp src/student.cpp \
 	src/generate-student-list.cpp \
 	src/test/generate-student-list-test.cpp \
@@ -12,18 +17,36 @@ SOURCES = src/main.cpp src/main-menu.cpp src/utils/input-utils.cpp \
 	src/data-sorting/sort-nuskriausti-and-protingi.cpp \
 	src/output-results.cpp \
 	src/create-student.cpp
-OBJECTS = $(patsubst src/%.cpp,$(OBJDIR)/%.o,$(SOURCES))
+APP_OBJECTS = $(patsubst src/%.cpp,$(OBJDIR)/%.o,$(APP_SOURCES))
 
-$(TARGET): $(OBJECTS)
-	$(CXX) $(CXXFLAGS) -o $@ $(OBJECTS)
+TEST_APP_SOURCES = src/student.cpp src/utils/grading-utils.cpp
+TEST_OBJECTS = $(patsubst src/%.cpp,$(TEST_OBJDIR)/%.o,$(TEST_APP_SOURCES)) \
+	$(TEST_OBJDIR)/vendor/catch2/catch_amalgamated.o \
+	$(TEST_OBJDIR)/test/catch2-main.o \
+	$(TEST_OBJDIR)/test/student-catch2-test.o
 
+$(TARGET): $(APP_OBJECTS)
+	$(CXX) $(CXXFLAGS) -o $@ $(APP_OBJECTS)
+
+$(TEST_TARGET): $(TEST_OBJECTS)
+	$(CXX) $(TEST_CXXFLAGS) -o $@ $(TEST_OBJECTS)
 
 $(OBJDIR)/%.o: src/%.cpp
 	mkdir -p $(@D)
 	$(CXX) $(CXXFLAGS) -c $< -o $@
 
-clean:
-	rm -f $(TARGET)
-	rm -rf $(OBJDIR)
+$(TEST_OBJDIR)/%.o: src/%.cpp
+	mkdir -p $(@D)
+	$(CXX) $(TEST_CXXFLAGS) -c $< -o $@
 
-.PHONY: clean
+$(TEST_OBJDIR)/vendor/catch2/%.o: vendor/catch2/%.cpp
+	mkdir -p $(@D)
+	$(CXX) $(TEST_CXXFLAGS) -c $< -o $@
+
+all: $(TARGET) $(TEST_TARGET)
+
+clean:
+	rm -f $(TARGET) $(TEST_TARGET)
+	rm -rf $(OBJDIR) $(TEST_OBJDIR)
+
+.PHONY: all clean
