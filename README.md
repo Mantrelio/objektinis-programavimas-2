@@ -138,18 +138,38 @@ Papildomai realizuoti įvedimo/išvedimo operatoriai:
 
 ### Šių dalių testų padengimas
 
-Interaktyviame meniu pasirinkus `9 - Testuoti Student Rule of Five ir operatorius` paleidžiamas testų rinkinys iš `src/test/student-rule-of-five-operators-test.cpp`.
+Projekte yra du testavimo keliai:
 
-Padengiami testai:
+1. Interaktyvūs runtime testai meniu punkte `9 - Testuoti Student Rule of Five ir operatorius` (failas `src/test/runtime-test/student-rule-of-five-operators-test.cpp`).
+2. Catch2 unit testai (failas `src/test/unit-test/student-catch2-test.cpp`).
 
-- kopijavimo konstruktorius (ar nukopijuoti visi laukai)
-- perkėlimo konstruktorius (ar perkelti visi laukai)
-- kopijavimo priskyrimo operatorius
-- perkėlimo priskyrimo operatorius
+Įgyvendinti unit testai padengia:
+
+- kopijavimo konstruktorių
+- perkėlimo konstruktorių
+- kopijavimo priskyrimo operatorių
+- perkėlimo priskyrimo operatorių
+- destruktoriaus saugų panaudojimą (sunaikinimas ir objekto atstatymas toje pačioje atmintyje)
 - `operator>>` su korektiška įvestimi
 - `operator>>` su nekorektiška įvestimi (`failbit`)
-- `operator<<` formatavimas (lyginama pilna suformatuota eilutė)
-- abstrakti `Human` klasė (tikrinama, kad `Human` yra abstrakti ir jos objekto sukurti negalima)
+- `operator<<` formatavimą (lyginama pilna suformatuota eilutė)
+- `Human` abstraktumo tikrinimą (`std::is_abstract`, `std::is_default_constructible`)
+
+### Kaip sukompiliuoti ir paleisti unit testus
+
+Iš projekto šakninio aplanko:
+
+```bash
+make test
+./test
+```
+
+Papildomai galima paleisti tik pasirinktus Catch2 testus pagal žymes (tags):
+
+```bash
+./test "[rule-of-five]"
+./test "[operators]"
+```
 
 ## Testų rezultatai: `struct` ir `class`
 
