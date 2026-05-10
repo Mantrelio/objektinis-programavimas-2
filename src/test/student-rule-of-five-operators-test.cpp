@@ -34,7 +34,10 @@ bool testMoveConstructor() {
            moved.surname() == "Petraitis" &&
            moved.examGrade() == 9 &&
            moved.homeworkGrades() == std::vector<int>({6, 7, 8}) &&
-           source.examGrade() == 0;
+           source.name().empty() &&
+           source.surname().empty() &&
+           source.examGrade() == 0 &&
+           source.homeworkGrades().empty();
 }
 
 bool testCopyAssignment() {
@@ -59,7 +62,11 @@ bool testMoveAssignment() {
     return target.name() == "Ieva" &&
            target.surname() == "Ievaite" &&
            target.examGrade() == 10 &&
-           target.homeworkGrades() == std::vector<int>({7, 8});
+           target.homeworkGrades() == std::vector<int>({7, 8}) &&
+           source.name().empty() &&
+           source.surname().empty() &&
+           source.examGrade() == 0 &&
+           source.homeworkGrades().empty();
 }
 
 bool testDestructor() {
