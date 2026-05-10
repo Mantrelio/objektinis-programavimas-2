@@ -3,7 +3,7 @@ CXXFLAGS = -std=c++17 -Wall -Wextra -Iinclude
 TEST_CXXFLAGS = $(CXXFLAGS) -Ivendor/catch2
 
 TARGET = main
-TEST_TARGET = tests
+TEST_TARGET = test
 OBJDIR = build/obj
 TEST_OBJDIR = build/test-obj
 
