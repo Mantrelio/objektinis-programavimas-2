@@ -234,9 +234,9 @@ Stulpeliai **100k Viso** / **1M Viso** atitinka failų `students100000` ir `stud
 | `struct` | `-O1` | 253.9 | 0.370915 | 4.305099 |
 | `struct` | `-O2` | 250.4 | 0.368166 | 4.306130 |
 | `struct` | `-O3` | 287.8 | 0.372487 | 4.331548 |
-| `class` | `-O1` | 253.9 | 0.403521 | 4.895525 |
-| `class` | `-O2` | 250.4 | 0.441929 | 4.812805 |
-| `class` | `-O3` | 287.8 | 0.390308 | 4.574972 |
+| `class` | `-O1` | 254.7 | 0.403521 | 4.895525 |
+| `class` | `-O2` | 251.1 | 0.441929 | 4.812805 |
+| `class` | `-O3` | 288.6 | 0.390308 | 4.574972 |
 
 Trumpa įžvalga: didinant optimizavimo lygį, bendras vykdymo laikas mažėja abiem realizacijoms, o didžiausias pagerėjimas dažniausiai matomas pereinant nuo `-O1` prie `-O2`.
 
